@@ -104,3 +104,41 @@ Use this throughout the day.
 4. What should Atlas remember tomorrow?
 5. What should be committed?
 6. What should not be committed?
+
+---
+
+## Session Start Repo Review
+
+Use this when starting a FamilyAI, DavidOS, or DavidAIStory work session.
+
+### Repos to review
+
+- FamilyAI: `/home/hermes/projects/familyAI`
+- DavidOS: `/home/hermes/projects/personal-ai-workspace`
+- DavidAIStory: `/home/hermes/projects/DavidAIStory`
+
+### Review questions
+
+1. What branch is each repo on?
+2. Is the working tree clean?
+3. What changed since the last session?
+4. What docs are newly added or modified?
+5. Are any docs stale, duplicate, or contradictory?
+6. What decisions are open?
+7. What is the safest next step for the sprint?
+
+### Atlas output required
+
+Atlas should return:
+
+1. Current state by workstream
+2. Completed work since last review
+3. Open decisions
+4. Quality risks
+5. Stale or contradictory docs to watch
+6. Recommended next action
+7. Whether work should go to Atlas, Hermes, another agent, or the founder
+
+### Safety rule
+
+Repo review may inspect files and propose changes. It must not commit, push, modify code, touch Supabase, touch Vercel, apply migrations, expose credentials, or delete files without explicit founder approval.

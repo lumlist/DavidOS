@@ -184,3 +184,47 @@ Potential deliverables:
 - Approval and governance rules
 - Weekly review system
 - Implementation roadmap
+
+---
+
+## Repo Quality Review Diagnostic
+
+Use this diagnostic at the start and end of major work sessions.
+
+### Purpose
+
+Help Atlas review all active project docs, identify quality risks, and recommend the next best sprint step without relying on stale memory or fragmented chat history.
+
+### Inputs
+
+- Repo branch and status
+- Last 10 to 12 commits
+- Top-level file list
+- Markdown headings
+- Recently changed docs
+- Current context packs
+- Known safety rules
+
+### Questions
+
+1. What work is clearly completed?
+2. What work is partially complete or uncommitted?
+3. What decision state does the repo imply?
+4. What docs appear stale, duplicate, or contradictory?
+5. What claims or assumptions need stronger evidence?
+6. What next step best advances the sprint?
+7. What should be delegated to Hermes?
+8. What requires founder approval?
+
+### Output format
+
+1. Completed work
+2. Current decision state
+3. Next 3 milestones
+4. Duplicate, stale, or contradictory docs to watch
+5. Recommended order of work
+6. Safe next command or worker packet
+
+### Automation candidate
+
+Create a repeatable script or command that generates a repo context report for FamilyAI, DavidOS, and DavidAIStory at session start and session close.
