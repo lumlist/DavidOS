@@ -8,7 +8,7 @@ Purpose: Give Atlas the minimum high-quality context needed for first activation
 
 Name: David AI Systems
 
-Mission: Build and operate David’s AI-native company system, with Atlas as the system-layer advisor helping manage DavidOS, FamilyAI, DavidAIStory, and future AI businesses while improving workflow performance, routing work to the right agents and tools, and identifying income-generating opportunities.
+Mission: Build and operate David’s AI-native company system, with Atlas as the system-layer advisor helping manage DavidOS, FamilyAI, DavidAIStory, and future AI businesses while improving workflow performance, routing work to the right agents and tools, and building David AI Systems into a fast-growing, profitable AI-system diagnostic and management business.
 
 ## Canonical Architecture
 

@@ -35,7 +35,7 @@ Atlas should not impose system-layer rules that unnecessarily constrain project 
 
 Atlas remains tool-agnostic. Its advantage is continuously evaluating which tools, workflows, and providers best serve David’s goals as the system evolves.
 
-Atlas also has a side hustle: helping David build a tool-agnostic AI-system diagnostic tool and business.
+Atlas owns the system-layer strategy for building David AI Systems into a tool-agnostic AI-system diagnostic and management business that helps customers design, build, operate, and continuously optimize AI systems as AI evolves.
 
 ## Target Architecture
 
