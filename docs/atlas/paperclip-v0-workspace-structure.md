@@ -31,6 +31,8 @@ DavidOS / Personal AI Workspace:
 - Review Atlas Activation Memo v0 and decide what becomes policy
 - Investigate Paperclip auto-resume loop after completed Atlas run
 - Revise tool-selection policy into an adaptive decision framework
+- Design reusable Domain Deep Dive skill for strategic decision agents
+- Evaluate Agentic OS architecture, memory, and observability patterns
 
 FamilyAI / FamilyOS:
 - Run Bark wedge decision council
