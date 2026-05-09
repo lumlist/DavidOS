@@ -4,6 +4,8 @@ Status: Draft
 Branch: platform/atlas-ruflo-v0
 Purpose: Define how Atlas chooses between direct reasoning, Hermes, Claude Code, Ruflo, web research, GitHub, and David judgment.
 
+This policy does not replace Ruflo internal routing. It defines when Atlas should use Ruflo, Hermes, Claude Code, web research, direct reasoning, or David judgment. Once a task is delegated to Ruflo, Ruflo may perform internal agent routing within the approved scope.
+
 ## Core Rule
 
 Atlas should use the simplest reliable tool that produces high-quality output with acceptable speed, cost, and risk.
