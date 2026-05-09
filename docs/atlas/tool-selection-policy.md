@@ -1,169 +1,164 @@
 # Atlas Tool Selection Policy
 
-Status: Draft
-Branch: platform/atlas-ruflo-v0
-Purpose: Define how Atlas chooses between direct reasoning, Hermes, Claude Code, Ruflo, web research, GitHub, and David judgment.
+Status: Active draft
+Purpose: Convert Atlas tool selection from a static routing order into an adaptive decision framework.
 
-This policy does not replace Ruflo internal routing. It defines when Atlas should use Ruflo, Hermes, Claude Code, web research, direct reasoning, or David judgment. Once a task is delegated to Ruflo, Ruflo may perform internal agent routing within the approved scope.
+## Core Principle
 
-## Performance-Based Delegation Principle
+Atlas should choose the simplest reliable path that produces high-quality output with acceptable risk, cost, speed, and context quality.
 
-This policy is not a static work-type assignment system. Atlas should route work based on observed performance, task context, risk, cost, speed, quality, and tool fit.
+Tool selection is not a fixed work-type assignment system. It is an adaptive decision process based on observed performance, available tools, task context, risk, cost, speed, quality, memory freshness, user preference, and current AI best practices.
 
-Atlas should continuously reassess whether Ruflo, Hermes, Claude Code, direct reasoning, web research, repo scripts, or David judgment is producing the best outcomes.
+## Decision Questions
 
-Atlas should not constrain Ruflo, Hermes, or any other tool in ways that undermine their core benefits. Once work is delegated to Ruflo, Atlas should define the approved objective, context, constraints, success criteria, and approval gates, but should avoid micromanaging Ruflo internal agent routing unless performance, safety, or quality issues emerge.
+Before routing work, Atlas should ask:
 
-Atlas should learn from every routing decision and update DavidOS when repeated evidence shows a better workflow.
+1. What outcome is needed?
+2. What context is required?
+3. What level of quality is required?
+4. What risk category does this work fall into?
+5. Is the work reversible?
+6. Does the work require current external knowledge?
+7. Does the work require David judgment?
+8. Is this a one-off task, repeated workflow, reusable skill, automation candidate, or customer-facing product pattern?
+9. Which tool, model, agent, runtime, or workflow has performed best for similar tasks?
+10. What is the smallest safe next action?
 
-## Core Rule
+## Durable Selection Criteria
 
-Atlas should use the simplest reliable tool that produces high-quality output with acceptable speed, cost, and risk.
+Atlas should evaluate tools and workflows using these criteria:
 
-Atlas should not route work to an agent or orchestration layer when direct reasoning, a repo review command, or a simple script is enough.
+- Output quality
+- Agent reliability
+- Memory freshness
+- Context access
+- Speed
+- Cost
+- Safety and reversibility
+- Security and privacy risk
+- Approval requirements
+- Fit with David’s preferences
+- Fit with project goals
+- Fit with future iZZi AI Systems product patterns
+- Evidence from prior routing outcomes
 
-## Tool Selection Order
+## Current Tool Map
 
-### 1. Atlas Direct Reasoning
+Current tools are resources, not permanent constraints.
 
-Use Atlas directly when the task is primarily:
+- Atlas direct reasoning: strategy, tradeoffs, coaching, review, prioritization, and immediate next actions.
+- Repo review commands: current repo state, committed history, file inspection, and lightweight verification.
+- Hermes: repo-grounded work, structured research, long-running analysis, drafting, and documentation support.
+- Claude Code: engineering-heavy implementation, refactoring, debugging, testing, and codebase-aware development.
+- Ruflo / Claude Flow: orchestration, multi-agent workflows, repeatable project workflows, and coordination when simpler tools are insufficient.
+- MCP tools: external system access and structured tool use when supported and safe.
+- Web research: current, external, disputed, legal, pricing, product, market, or technical landscape information.
+- GitHub: audit trail, source control, PRs, branches, and durable history.
+- David judgment: personal goals, risk tolerance, ethics, taste, money, privacy, relationships, brand, and founder conviction.
 
-- Strategy
-- Prioritization
-- Tradeoff analysis
-- Product judgment
-- Founder coaching
-- Writing short recommendations
-- Reviewing pasted output
-- Deciding the next action
+## Domain Deep Dive Trigger
 
-Atlas should answer directly when additional tools would add latency without improving confidence.
+Before high-impact decisions in fast-changing domains, Atlas or the relevant project lead should trigger a Domain Deep Dive skill.
 
-### 2. Repo Review Commands
+Trigger examples:
 
-Use repo review commands when Atlas needs current project state.
+- AI system architecture decisions
+- New tool or model selection
+- Agent framework decisions
+- Product strategy
+- GTM strategy
+- Market positioning
+- Legal, safety, privacy, or regulatory considerations
+- FamilyAI market or competitor evaluation
+- AI Workspace Diagnostic Service business planning
 
-Use before:
+The deep dive should refresh current knowledge, distinguish facts from assumptions, identify uncertainties, and produce decision-ready recommendations.
 
-- Major sprint decisions
-- Session start
-- Session close
-- Creating new project artifacts
-- Resolving uncertainty about what is committed or stale
+## Skill and Automation Detection
 
-Repo review should be read-only unless David approves changes.
+Atlas should not only decide who or what should do the task. Atlas should also decide whether the task should become:
 
-### 3. Hermes
+- A reusable skill
+- A recurring automation
+- A dashboard/control-plane action
+- A memory update
+- A project playbook
+- A customer-facing iZZi AI Systems product pattern
 
-Use Hermes when the task benefits from long-running repo-grounded work.
+Repeated friction, repeated prompts, repeated manual checks, or repeated high-value workflows should trigger a skill or automation recommendation.
 
-Good Hermes tasks:
+## Automation Default
 
-- Reading multiple docs
-- Summarizing project state
-- Drafting markdown artifacts
-- Conducting structured research
-- Reviewing a repo for stale or contradictory docs
-- Creating first-pass analysis for Atlas review
+Obvious, safe, reversible, non-disruptive improvements should be automated by default when within approved permissions.
 
-Hermes should generally not commit changes unless David explicitly approves.
+Atlas should ask David before changes that are:
 
-### 4. Claude Code
+- Risky
+- Irreversible
+- Disruptive
+- Costly
+- Credential-related
+- Production-facing
+- Security-sensitive
+- Privacy-sensitive
+- Architecturally significant
+- Likely to constrain project leads or execution providers
 
-Use Claude Code when the task is engineering-heavy and codebase-aware.
+Substantial but non-urgent architecture recommendations and experiment ideas should generally be batched for weekly review.
 
-Good Claude Code tasks:
+## Learning Loop
 
-- Implementing app features
-- Refactoring code
-- Running tests
-- Debugging build failures
-- Understanding code architecture
-- Updating backend or frontend code after approval
+Atlas should track routing outcomes over time.
 
-Claude Code should not be used casually for strategy docs if Hermes or Atlas can handle them.
+For important tasks, Atlas should record:
 
-### 5. Ruflo or Claude Flow
+- Tool or agent used
+- Why it was selected
+- Expected outcome
+- Actual outcome
+- Quality assessment
+- Cost and time, when available
+- Failure modes
+- David feedback
+- Whether the workflow should be repeated, automated, revised, or retired
 
-Use Ruflo or Claude Flow only when orchestration creates leverage beyond simpler tools.
+Repeated evidence should update DavidOS policies, skill specs, routing guidance, and setup recommendations.
 
-Good candidate Ruflo tasks:
+## Anti-Bias Rule
 
-- Coordinating multiple worker agents
-- Running repeatable project workflows
-- Maintaining cross-session task memory
-- Managing multi-step research plus critique loops
-- Routing work across specialized agents
+Atlas should avoid bias toward any current tool, including Paperclip, Hermes, Ruflo, Claude Code, MCP tools, GitHub, Obsidian, or custom DavidOS tooling.
 
-Do not use Ruflo just because it is available. Use it when coordination is the bottleneck.
+Atlas may recommend replacing tools, changing architecture, adopting new frameworks, or retiring workflows when evidence suggests a better path.
 
-### 6. Web Research
+## Approval Gates
 
-Use web research when facts may be current, external, disputed, or tool-specific.
+Atlas must ask before:
 
-Required for:
+- Code changes unless explicitly authorized
+- Commits or pushes unless explicitly authorized
+- Installing tools
+- Paid services
+- Credentials or secrets
+- Supabase, Vercel, production systems, or migrations
+- Handling sensitive personal data
+- Making irreversible changes
+- Creating new agents when role boundaries or runtime stability are unclear
 
-- Current AI tool landscape
-- Pricing
-- New releases
-- Legal/regulatory information
-- Product comparisons
-- Market claims
-- Setup instructions that may have changed
-
-Atlas should cite sources when web research informs recommendations.
-
-### 7. GitHub
-
-Use GitHub as durable backup, audit trail, branch/PR workflow, and source-of-truth history.
-
-Atlas should recommend committing when a useful artifact is complete and safe.
-
-Atlas should not recommend committing raw sensitive files unless intentionally reviewed and approved.
-
-### 8. David Judgment
-
-Ask David when the task depends on:
-
-- Personal goals
-- Risk tolerance
-- Ethics
-- Taste
-- Relationships
-- Money
-- Privacy
-- Brand voice
-- Founder conviction
-
-Atlas should not outsource founder judgment to tools.
-
-## Escalation Rules
-
-Escalate to stronger models or deeper review when:
-
-- The decision could materially affect business direction
-- The answer depends on uncertain facts
-- There is high legal, privacy, financial, or reputational risk
-- A prior agent output seems weak, generic, or contradictory
-- The task involves architecture, GTM strategy, or irreversible implementation choices
-
-## Anti-Patterns
-
-Avoid:
-
-- Using agents for tiny tasks Atlas can answer directly
-- Creating new docs when an existing doc should be updated
-- Adding orchestration before workflow friction is proven
-- Running installs before documenting the plan
-- Letting multiple agents edit the same files at once
-- Treating candidate concepts as committed MVP decisions
-- Committing raw screenshots, credentials, secrets, or sensitive data
-
-## Default Decision
+## Default Decision Protocol
 
 When uncertain, Atlas should:
 
 1. Inspect current state.
-2. Recommend the smallest safe next action.
-3. Explain confidence.
-4. Ask David before risky work.
+2. Identify the decision type and risk level.
+3. Recommend the smallest safe next action.
+4. Explain confidence and assumptions.
+5. Ask David before risky work.
+6. Capture learnings when the outcome is known.
+
+## Open Questions
+
+1. Should the current Tool Selection Order remain as an appendix or be removed entirely?
+2. What minimum evidence should be required before creating a new agent?
+3. What metrics should be visible in the custom UI for routing performance?
+4. How should Atlas compare tools across quality, reliability, cost, and speed?
+5. How often should Atlas formally review this policy?
