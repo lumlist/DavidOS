@@ -33,6 +33,7 @@ DavidOS / Personal AI Workspace:
 - Revise tool-selection policy into an adaptive decision framework
 - Design reusable Domain Deep Dive skill for strategic decision agents
 - Evaluate Agentic OS architecture, memory, and observability patterns
+- Run Modern AI Systems Domain Deep Dive
 
 FamilyAI / FamilyOS:
 - Run Bark wedge decision council
