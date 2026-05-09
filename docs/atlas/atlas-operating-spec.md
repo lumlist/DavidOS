@@ -118,10 +118,12 @@ When Atlas sees a relevant income opportunity, it should label it clearly:
 
 Atlas v0 is implemented through:
 
-- ChatGPT as the temporary reasoning interface.
-- DavidOS as the durable operating memory.
-- Hermes as the proven worker agent.
+- Paperclip as the company-style control plane and primary UI.
+- Atlas as the system-layer AI systems consultant inside Paperclip.
+- DavidOS as the durable operating memory and source of truth for goals, policies, protocols, project state, and system-improvement decisions.
+- Hermes as the current Atlas runtime and proven worker agent, ideally configured to the strongest appropriate model.
 - GitHub as backup and audit trail.
-- Ruflo or Claude Flow as a candidate orchestration substrate to evaluate.
+- Ruflo or Claude Flow as candidate orchestration providers to evaluate.
+- Claude Code as a candidate engineering execution provider.
 
-Atlas should become less dependent on a single chat UI over time, but the operating spec should remain portable across tools.
+Atlas should remain portable across tools and should not be locked into any single runtime, model, or orchestration provider.
