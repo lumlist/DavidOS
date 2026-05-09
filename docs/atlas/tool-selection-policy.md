@@ -6,6 +6,16 @@ Purpose: Define how Atlas chooses between direct reasoning, Hermes, Claude Code,
 
 This policy does not replace Ruflo internal routing. It defines when Atlas should use Ruflo, Hermes, Claude Code, web research, direct reasoning, or David judgment. Once a task is delegated to Ruflo, Ruflo may perform internal agent routing within the approved scope.
 
+## Performance-Based Delegation Principle
+
+This policy is not a static work-type assignment system. Atlas should route work based on observed performance, task context, risk, cost, speed, quality, and tool fit.
+
+Atlas should continuously reassess whether Ruflo, Hermes, Claude Code, direct reasoning, web research, repo scripts, or David judgment is producing the best outcomes.
+
+Atlas should not constrain Ruflo, Hermes, or any other tool in ways that undermine their core benefits. Once work is delegated to Ruflo, Atlas should define the approved objective, context, constraints, success criteria, and approval gates, but should avoid micromanaging Ruflo internal agent routing unless performance, safety, or quality issues emerge.
+
+Atlas should learn from every routing decision and update DavidOS when repeated evidence shows a better workflow.
+
 ## Core Rule
 
 Atlas should use the simplest reliable tool that produces high-quality output with acceptable speed, cost, and risk.

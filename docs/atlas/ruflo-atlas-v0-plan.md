@@ -2,7 +2,7 @@
 
 Status: Draft
 Branch: platform/atlas-ruflo-v0
-Purpose: Define how Atlas will be built on Ruflo or Claude Flow without overengineering DavidOS.
+Purpose: Define how Atlas, Paperclip, Ruflo, Claude Flow, Hermes, and DavidOS should fit together without overengineering the system.
 
 ## Current Finding
 
@@ -20,6 +20,22 @@ Atlas helps David build, maintain, and improve DavidOS while supporting active w
 Atlas should use existing tools by default.
 Atlas should not recreate Hermes, Claude Code, GitHub, MCP, or orchestration logic unless a repeated workflow gap proves custom process is needed.
 Custom logic should be created only when it improves speed, quality, safety, cost, or consistency in a measurable way.
+
+## Paperclip Architecture Update
+
+Paperclip is the preferred candidate for the company-style control plane.
+
+Atlas should not be trapped inside Ruflo. Atlas should operate at the system layer as David’s primary AI systems consultant, advisor, and chief of staff.
+
+Ruflo or Claude Flow should be treated as orchestration providers available to Atlas or project leads when they improve outcomes. Hermes remains a proven worker and may continue to be used directly or through future integrations.
+
+Paperclip should represent the AI organization: Atlas at the system layer, project leads for major workstreams, and execution providers such as Hermes, Ruflo, Claude Code, MCP tools, web research, scripts, and GitHub.
+
+Atlas should not impose system-layer rules that unnecessarily constrain project leads or orchestration providers. If a system policy conflicts with a project lead’s proposed approach, Atlas should surface the tradeoff and help David decide.
+
+Atlas remains tool-agnostic. Its advantage is continuously evaluating which tools, workflows, and providers best serve David’s goals as the system evolves.
+
+Atlas also has a side hustle: helping David build a tool-agnostic AI-system diagnostic tool and business.
 
 ## Target Architecture
 
