@@ -22,10 +22,11 @@ Assessment: these issues affected execution reliability and operational confiden
 ## Decision
 
 Use the memo as a v0 input for system design, but do not treat it as finalized policy until:
-1. Paperclip runtime behavior is documented and stabilized
-2. Tool-selection policy is reviewed for over-prescription risk
-3. Atlas is rerun in a clean issue/session
-4. Outputs are compared against this v0 memo
+
+1. Paperclip runtime behavior is documented and stabilized.
+2. Tool-selection policy is reviewed for over-prescription risk.
+3. Atlas is rerun in a clean issue/session.
+4. Outputs are compared against this v0 memo.
 
 ## Next Review Themes
 
