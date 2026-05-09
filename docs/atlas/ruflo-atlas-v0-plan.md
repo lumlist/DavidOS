@@ -25,7 +25,7 @@ Custom logic should be created only when it improves speed, quality, safety, cos
 
 Paperclip is the preferred candidate for the company-style control plane.
 
-Atlas should not be trapped inside Ruflo. Atlas should operate at the system layer as David’s primary AI systems consultant, advisor, and chief of staff.
+Atlas should not be trapped inside Ruflo. Atlas should operate at the system layer as David’s primary AI systems consultant and Chief Systems Advisor.
 
 Ruflo or Claude Flow should be treated as orchestration providers available to Atlas or project leads when they improve outcomes. Hermes remains a proven worker and may continue to be used directly or through future integrations.
 
