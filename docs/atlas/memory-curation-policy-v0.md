@@ -22,10 +22,11 @@ docs/
   archive/  # superseded material — read-only after entry
   daily/    # daily notes (template-driven) — David writes; Atlas appends [ATLAS-NOTE]
   atlas/    # Atlas's operating spec, runs, skills, policies — Atlas writes, versioned
+  sessions/ # Session workflow artifacts — see §3 sessions/-specific rules
   context/  # project-context files (preserved as-is, used by various tools)
 ```
 
-`docs/atlas/` exists today and is unchanged. The five new folders (`raw/`, `wiki/`, `output/`, `archive/`, `daily/`) are introduced in the Stage 1 bundle. `docs/context/` is preserved as-is.
+`docs/atlas/` exists today and is unchanged. The five Stage 1 folders (`raw/`, `wiki/`, `output/`, `archive/`, `daily/`) are introduced in the Stage 1 bundle. `docs/sessions/` is introduced in the Stage 2.5 bundle. `docs/context/` is preserved as-is.
 
 ## 3. Write permission and promotion paths
 
@@ -37,6 +38,22 @@ docs/
 | `archive/` | No | Auto from `output/`, or `[APPROVAL: archive-promotion]` from `wiki/` | Read-only |
 | `daily/` | David writes; Atlas appends `[ATLAS-NOTE]` | Auto-archive 90 days | David edits in place; Atlas appends only |
 | `atlas/` | Atlas writes (see §4) | n/a — this is Atlas's self-knowledge | Versioned by filename suffix; no overwrites without `[APPROVAL: policy-change]` |
+| `sessions/drafts/` | David writes; Atlas writes Atlas-section of `parking-lot.md` only; other agents write their own subsection of `parking-lot.md` only | n/a — drafts are inert, not promoted | David edits in place; Atlas does NOT touch session-{start,end}-draft files during normal operation |
+| `sessions/submitted/` | Atlas writes Session Debriefs; `scripts/session.py` (Stage 2.6+) writes session-start / session-end snapshots | n/a — immutable archive | Read-only after creation; corrections via follow-up `[SESSION-*-CORRECTION]` comment, not file edit |
+| `sessions/offline-queue/` | Atlas creates pending items; Atlas updates `status:` header on David's reply | Approved items stay in folder until execution complete; then move to `docs/output/<originating-issue>/` or `docs/archive/sessions-offline-queue/` per item kind | Atlas updates `status:` and decision-log on David's reply; body is otherwise immutable |
+
+### 3.1 `docs/sessions/`-specific rules
+
+These rules are cross-cutting and apply on top of the per-folder rows above. Source of truth for the lifecycle and templates: `docs/atlas/davidos-session-workflow-v0.md`.
+
+1. **Drafts are inert.** Atlas does NOT read `docs/sessions/drafts/session-start-draft.md` or `docs/sessions/drafts/session-end-draft.md` during heartbeat operation. Draft contents become instructions only when David runs `scripts/session.py {start,end}` (Stage 2.6+) and the script atomically copies the draft into `docs/sessions/submitted/` and posts the matching `[SESSION START]` / `[SESSION END]` comment.
+2. **Atlas always produces the Session Debrief.** On every `[SESSION END]`, regardless of whether David provided notes, Atlas writes a Session Debrief to `docs/sessions/submitted/<timestamp>-debrief.md` and posts `[SESSION-DEBRIEF]` on the session-tracker issue. The Debrief follows the eight-section schema in `davidos-session-workflow-v0.md` §8.
+3. **Submitted is immutable.** Files under `docs/sessions/submitted/` are not edited after creation. Corrections go in a follow-up `[SESSION-START-CORRECTION]` / `[SESSION-END-CORRECTION]` / `[SESSION-DEBRIEF-CORRECTION]` comment on the session-tracker issue.
+4. **Parking Lot is observation, not direction.** `docs/sessions/drafts/parking-lot.md` has three labeled sections (`## David` / `## Atlas` / `## Other agents` with one H3 subsection per agent slug). Each entry: `- <YYYY-MM-DD HH:MM> | <category> | <text>`. Categories: `idea` | `question` | `concern` | `consideration` | `observation`. Atlas may surface high-value items in the Daily Operating View "Atlas recommendations" section and in the Session Debrief's `## Promotion candidates` section, but acts on none without explicit `[APPROVAL: <kind>]`.
+5. **Agent-submitted items are suggestions only.** Items added to the Atlas section or Other-agents subsections of the Parking Lot are NOT durable memory, NOT active work, NOT skills, NOT automations, and NOT agent instructions. They become any of those only via David's explicit `[APPROVAL: <kind>]` on a corresponding promotion or approval-request.
+6. **Offline-queue items are pending until approved.** Atlas reads pending items and may pre-research within `safe-doc-edit` bounds. Atlas does NOT execute the proposed action until the file's `status:` header is `approved`. Each pending item generates one `[APPROVAL-REQUEST] kind: offline-work` comment on the session-tracker issue.
+7. **Cross-source segregation.** Atlas does not move items between Parking Lot sections. If an entry's source needs re-attribution, the original line stays and a corrective note is appended in the same source's section. Filtering "mine only" is supported by the file structure (David reads only `## David`); the Daily Operating View renderer (Stage 2.6+) will offer a per-source filter so all four views (David / Atlas / Other agents / All) are one click apart.
+
 
 ## 4. The `atlas/` folder is special
 
