@@ -1,35 +1,25 @@
-# Session Start template
+# Session Start — 2026-05-11
 
-Fill this from any markdown editor, then run `python scripts/session.py start`.
+## Response to prior debrief
+(approvals, denials, modifications, questions back. Empty if nothing to react to.)
 
-Empty sections are fine — leave them blank or write `n/a`.
+## Top-of-mind context
+(what's loaded in your head. Recent events, current state of the world that should color today's work.)
 
----
+## Focus areas for this session
+(broad areas you want to spend time on — not specific decisions. Atlas can recommend decisions within these.)
 
-## Reply to last debrief
+## Open questions for Atlas / Karrigan
+(things you want input on before committing to priorities. Karrigan/your strategist may shape these into decisions during the session.)
 
-(What landed since the previous Session Debrief? Anything you disagree with or want re-prioritized? Leave blank if no prior debrief or no changes.)
+## Ideas / considerations
+(half-formed thoughts to record. May be parked, deferred, or surfaced.)
 
-## Top of mind
+## Offline-work intent
+(asynchronous items you want queued. Different from ideas — these imply you want the system to act on them eventually.)
 
-(Threads you want kept active during this session. Bullets are fine.)
+## Out-of-scope for this session
+(things explicitly not to work on tonight. Stops scope creep at the front door.)
 
-## Decisions I want help with
-
-(Specific decisions you want Atlas's analysis on. List with one-line context each.)
-
-## Questions
-
-(Open questions, technical or product, that aren't yet decisions.)
-
-## Ideas
-
-(Half-formed thoughts. Atlas will route to Parking Lot unless you mark them otherwise.)
-
-## Considerations or concerns
-
-(Risks, costs, security, or memory-hygiene items you want flagged.)
-
-## Optional: extended-away signal
-
-(If you're stepping away for ≥10 hours after this session, write so here. Atlas's next Session Debrief will populate the security/cost/memory/offline-scope section accordingly.)
+## Constraints
+(spend ceiling, model rules, anything else. Default: Sonnet-class only, no Opus without explicit approval. Today's OpenRouter cap: $25, used $7.84 at session open, available $17.16.)
