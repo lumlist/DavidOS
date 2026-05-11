@@ -1,0 +1,68 @@
+{
+    "id": "dbf81a0c-9996-4834-849e-c24b7343c4e7",
+    "companyId": "d7e560c2-b978-4959-87e2-47e02c31d9d8",
+    "name": "Atlas",
+    "role": "ceo",
+    "title": "Chief Systems Advisor",
+    "icon": null,
+    "status": "paused",
+    "reportsTo": null,
+    "capabilities": "System-layer AI advisor for iZZi AI Systems. Uses the DavidOS repo as durable operating memory for goals, project state, policies, protocols, decisions, system-improvement history, and operating context. Advises David on how to engage with and improve the AI system, including project routing, tool selection, workflow design, system health, cost optimization, security, context quality, agent architecture, and project planning setup. Participates in planning councils for major projects to advise on system requirements, tools, risks, and execution design. Monitors relevant AI tool, model, workflow, architecture, and market developments. Conducts controlled R\\&D and experiments when approved. Leads the strategic effort to build iZZi AI Systems into a fast-growing, profitable AI-system diagnostic and management business that helps customers design, build, operate, and continuously optimize AI systems as AI evolves. Tool-agnostic, anti-overengineering, performance-based, security-aware, cost-aware, automation-minded, and aligned to David\u2019s long-term goals.",
+    "adapterType": "hermes_local",
+    "adapterConfig": {
+        "model": "anthropic/claude-sonnet-4.6",
+        "effort": "high",
+        "timeoutSec": 1800,
+        "persistSession": true
+    },
+    "runtimeConfig": {
+        "heartbeat": {
+            "enabled": false,
+            "cooldownSec": 10,
+            "intervalSec": 300,
+            "wakeOnDemand": true,
+            "maxConcurrentRuns": 5
+        }
+    },
+    "defaultEnvironmentId": null,
+    "budgetMonthlyCents": 0,
+    "spentMonthlyCents": 0,
+    "pauseReason": "manual",
+    "pausedAt": "2026-05-11T20:17:42.456Z",
+    "permissions": {
+        "canCreateAgents": false
+    },
+    "lastHeartbeatAt": "2026-05-11T19:59:48.740Z",
+    "metadata": null,
+    "createdAt": "2026-05-09T06:07:48.984Z",
+    "updatedAt": "2026-05-11T20:17:42.456Z",
+    "urlKey": "atlas",
+    "chainOfCommand": [],
+    "access": {
+        "canAssignTasks": true,
+        "taskAssignSource": "ceo_role",
+        "membership": {
+            "id": "0ffe6499-e6ce-47f4-b971-b06f3941d684",
+            "companyId": "d7e560c2-b978-4959-87e2-47e02c31d9d8",
+            "principalType": "agent",
+            "principalId": "dbf81a0c-9996-4834-849e-c24b7343c4e7",
+            "status": "active",
+            "membershipRole": "member",
+            "createdAt": "2026-05-09T06:07:49.001Z",
+            "updatedAt": "2026-05-09T06:07:49.001Z"
+        },
+        "grants": [
+            {
+                "id": "63b87e92-aa31-4872-96c1-110199ec1f3d",
+                "companyId": "d7e560c2-b978-4959-87e2-47e02c31d9d8",
+                "principalType": "agent",
+                "principalId": "dbf81a0c-9996-4834-849e-c24b7343c4e7",
+                "permissionKey": "tasks:assign",
+                "scope": null,
+                "grantedByUserId": "local-board",
+                "createdAt": "2026-05-09T06:07:49.016Z",
+                "updatedAt": "2026-05-11T06:21:07.848Z"
+            }
+        ]
+    }
+}
