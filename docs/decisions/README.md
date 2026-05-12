@@ -17,8 +17,12 @@ Copy [`ADR-template.md`](./ADR-template.md) to `ADR-NNN-short-title.md`, fill it
 - [ADR-001](./ADR-001-adopt-hermes-workspace.md) — Adopt hermes-workspace over custom UI build (2026-05-11)
 - [ADR-002](./ADR-002-anthropic-oauth-over-api-key.md) — Anthropic OAuth over API key for daily driver (2026-05-11)
 - [ADR-003](./ADR-003-paperclip-frozen-atlas-memo-library.md) — Paperclip frozen; Atlas as memo library (2026-05-11)
+- [ADR-004](./ADR-004-workspace-native-approval-mechanism.md) — Workspace-native approval mechanism (2026-05-11)
+
+## Approvals log
+
+[`approvals-log.md`](./approvals-log.md) — durable append-only index of every approval (created with ADR-004). Atlas reads this at session start to know what's already authorized.
 
 ## Pending / candidate ADRs
 
-- ADR-004 — Workspace-native approval mechanism (replacement for Paperclip `[APPROVAL: <kind>]` tags)
 - Retro-ADR for Stage 1 folder layout (`raw/wiki/output/archive/daily/atlas` curation scheme)
