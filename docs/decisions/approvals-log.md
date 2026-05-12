@@ -23,6 +23,9 @@
 | 2026-05-11 | Full | Workspace-native approval mechanism (this log + two intensities + 90-day default expiry on policy approvals) | Approved | 2026-08-11 | [ADR-004](./ADR-004-workspace-native-approval-mechanism.md) |
 | 2026-05-11 | Light | Use `david@lumlist.app` as canonical git commit email for lumlist/* repos | Approved | Permanent | This-session conversation |
 | 2026-05-11 | Light | Switch DavidAIStory to inflection-point capture cadence (4-6 entries/year) over daily/weekly logs | Approved | Permanent | [DavidAIStory PR #1](https://github.com/lumlist/DavidAIStory/pull/1) |
+| 2026-05-11 | Light | Skip Hermes update tonight (`9a63b5f → e855825`); take at next session start before substantive work | Approved | n/a (tactical) | [Session-end debrief](../sessions/submitted/2026-05-12T04-00-session-end.md) |
+| 2026-05-11 | Light | Defer M6b iZZi Builder Services scoping to next session; preserve fresh attention for research + scoping arc | Approved | n/a (tactical) | [Session-end debrief](../sessions/submitted/2026-05-12T04-00-session-end.md) |
+| 2026-05-11 | Light | M6b approach: AI-assisted research phase before committing to one-pager; combine consulting + tooling targeting solo-founder / non-technical-operator / small-business mix | Approved (open to amendment) | 2026-08-11 | [Session-end debrief](../sessions/submitted/2026-05-12T04-00-session-end.md) |
 
 ## Revocations and modifications
 
