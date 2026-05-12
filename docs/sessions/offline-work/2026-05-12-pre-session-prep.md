@@ -8,11 +8,13 @@
 
 ## TL;DR for fresh-attention reading
 
-Tonight's work surfaced that the original M6b plan (design an iZZi business planning workflow) needed multiple structural reframes. Each reframe sharpened the design. Late in the conversation, parallel research subagents returned findings that suggest a deeper structural pivot is warranted — but that decision deserved fresh judgment, so it was deferred to next session.
+Tonight's work surfaced that the original M6b plan (design an iZZi business planning workflow) needed multiple structural reframes. Each reframe sharpened the design. Late in the conversation, parallel research subagents returned findings that suggest a deeper structural pivot is warranted — but that decision is exactly the kind of high-leverage structural call that Atlas was charter-designed to weigh in on. So it was deferred to next session with Atlas-reviews-first routing.
 
-**The pending decision:** whether to (A) continue M6b as a project intake-to-handoff system, (B) pivot to substrate-first design that ships behavioral baselines for Atlas before any process work, or (C) hybrid. Research lightly favors B.
+**The pending decision:** whether to (A) continue M6b as a project intake-to-handoff system, (B) pivot to substrate-first design that ships behavioral baselines for Atlas before any process work, or (C) hybrid. Computer's read (Sonnet, offline) lightly favors B.
 
-**Everything tonight is preserved.** No work is lost. Tomorrow's first decision is the direction; everything else cascades from it.
+**How the decision routes:** Atlas reads this memo + both research reports + the existing ADRs at session start. Atlas produces his own A/B/C/D recommendation with reasoning under Opus (this is the explicit Opus budget moment per ADR-002). David then decides with Atlas's recommendation as a substantial input. This is the first real test of Atlas as Chief Systems Advisor on a non-trivial structural question.
+
+**Everything tonight is preserved.** No work is lost. Tomorrow's first substantive step is Atlas's structural review; everything else cascades from David's response to that review.
 
 ---
 
@@ -252,21 +254,37 @@ Conversation transcript with full reasoning available in the session that produc
 
 ## Tomorrow's opening sequence
 
-**Step 1 — Read this memo first.** Especially the "deferred decision" section.
+**Step 1 — David reads this memo (especially TL;DR + deferred decision section).**
 
-**Step 2 — Make the A/B/C decision.** Or modify the options. This is the structural choice that shapes everything downstream.
-
-**Step 3 — Optionally: routine ops first if context-loading helps.**
-- Pull latest from GitHub (`git pull origin main`)
-- Hermes update (`9a63b5f → e855825`) — routine, can do before substantive work
+**Step 2 — Routine ops to set up clean context (recommended before Atlas spawn).**
+- Pull latest from GitHub (`cd /home/hermes/projects/personal-ai-workspace && git pull origin main`)
+- Hermes update (`9a63b5f → e855825`) — routine, before substantive work to avoid mid-session interruption
 - Atlas charter update for ADR-004 — small paste-and-run
 
-**Step 4 — Execute the chosen direction.**
+**Step 3 — Spawn Atlas. Engage him on the A/B/C decision under Opus.**
+
+The prompt to Atlas:
+> "Read `docs/sessions/offline-work/2026-05-12-pre-session-prep.md`, both reports in `docs/atlas/research/`, and re-load ADR-001 through ADR-004. Produce your structural recommendation on the A/B/C direction decision. State your confidence and basis. If you see a fourth option (D) we missed, propose it. Use the Full approval format from ADR-004 since this is a high-leverage policy-level decision."
+
+This is the **explicit Opus budget moment** per ADR-002. The synthesis required (two long research documents + four ADRs + a 300-line memo + framing decisions) is exactly the high-judgment work Opus earns its keep on.
+
+**Step 4 — David reviews Atlas's recommendation and decides.**
+
+Atlas's recommendation is a substantial input but not the decision. David retains the final call. Possible outcomes:
+- Accept Atlas's recommendation as-is
+- Accept with modification
+- Choose a different option than Atlas recommends (with stated reasoning)
+- Request more analysis before deciding
+
+The decision is logged in `docs/decisions/approvals-log.md` as a Full approval per ADR-004, with link to Atlas's recommendation artifact (saved as a session-debrief excerpt).
+
+**Step 5 — Execute the chosen direction.**
 - If A: continue drafting the intake-to-handoff brief with research findings folded in
 - If B: draft the substrate brief (this is a new artifact, but tonight's framing decisions still apply to it)
 - If C: draft the unified brief
+- If D (something Atlas proposes): scoped accordingly
 
-**Step 5 — Atlas reviews under Opus.** Whatever's drafted, Atlas pressure-tests structurally. This is the explicit Opus budget moment.
+**Step 6 — Atlas reviews the resulting draft.** Same Opus budget moment, second pass: Atlas pressure-tests the actual draft once produced.
 
 ---
 
@@ -287,8 +305,8 @@ These questions persist across options:
 ## What this memo does NOT do
 
 - Make any approved decisions. Everything is pre-Atlas thinking.
-- Commit to A, B, or C. That's tomorrow's first decision.
-- Draft the actual substrate or framework. That's after the direction is chosen.
+- Commit to A, B, or C. That's tomorrow's decision — made by David, with Atlas's recommendation as substantial input.
+- Speak for Atlas. He hasn't read any of this yet. His structural recommendation may differ from Computer's lightly-held Option B lean.
 
 ---
 
@@ -298,6 +316,8 @@ This offline-work session validated the "AI-assisted research before commitment"
 
 Worth codifying this pattern. Candidate addition for `docs/atlas/customer-zero-patterns.md` next session: "offline structured-conversation + parallel-research pattern" as a project-shaping technique.
 
+A second pattern also surfaced and is worth codifying: **route high-leverage structural decisions through the Chief Systems Advisor before deciding**, not after. The default agent-product pattern is operator-decides-alone; DavidOS has Atlas precisely so this default doesn't apply. The system should use the advisor it has.
+
 ---
 
-*End of memo. Pickup point for next session: read TL;DR, make A/B/C decision, proceed.*
+*End of memo. Pickup point for next session: David reads TL;DR → routine ops → Atlas reviews under Opus → David decides → execute.*

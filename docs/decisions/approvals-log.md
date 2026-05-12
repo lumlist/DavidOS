@@ -29,6 +29,7 @@
 | 2026-05-12 | Light | Pre-session offline prep on M6b framing (Layer A scope, two-category taxonomy with conversion, 5-fork vocabulary, multi-tenancy principle, self-improvement as system tenet, Business-Model Lead as Layer 2 template) | Approved as pre-Atlas thinking (subject to Atlas review next session) | 2026-08-12 | [Offline-work memo](../sessions/offline-work/2026-05-12-pre-session-prep.md) |
 | 2026-05-12 | Light | Parallel research subagent scope: registries + best-practices for AI-system risk and self-improvement | Approved | n/a (tactical) | [Offline-work memo](../sessions/offline-work/2026-05-12-pre-session-prep.md) |
 | 2026-05-12 | Light | Defer A/B/C direction decision (continue M6b vs. pivot to substrate-first vs. hybrid) to fresh judgment at next session start | Approved | n/a (tactical) | [Offline-work memo](../sessions/offline-work/2026-05-12-pre-session-prep.md) |
+| 2026-05-12 | Light | Route high-leverage structural decisions through Atlas first, not David alone; codify as a system pattern | Approved | Permanent | [Offline-work memo](../sessions/offline-work/2026-05-12-pre-session-prep.md) |
 
 ## Revocations and modifications
 

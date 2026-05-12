@@ -33,23 +33,28 @@ ss -tlnp 2>/dev/null | grep -E "8642|9119|3000"
 
 ## Open threads — pick at session start
 
-### Priority 1: Resume from offline prep — A/B/C direction decision
+### Priority 1: Resume from offline prep — Atlas reviews, then David decides A/B/C
 
 **Primary pickup:** [`docs/sessions/offline-work/2026-05-12-pre-session-prep.md`](./offline-work/2026-05-12-pre-session-prep.md)
 
-**TL;DR:** Tonight's offline work reframed M6b through five structural exchanges, then parallel research subagents returned findings suggesting the direction itself needs a structural decision before drafting continues. Three options held for fresh judgment:
+**TL;DR:** Tonight's offline work reframed M6b through five structural exchanges, then parallel research subagents returned findings suggesting the direction itself needs a structural decision. **The decision routes through Atlas first**, not David alone — this is exactly the high-leverage structural call Atlas was charter-designed for. The default agent-product pattern is operator-decides-alone; DavidOS has Atlas precisely so this default doesn't apply.
 
+**Three options:**
 - **Option A:** Continue M6b as scoped (intake-to-handoff system). Fold research into risk section.
-- **Option B (Computer's recommendation):** Pivot to substrate-first (charter regression + tool registry + registries + observations loop). M6b moves to session after substrate.
+- **Option B (Computer's offline lean):** Pivot to substrate-first (charter regression + tool registry + registries + observations loop). M6b moves to session after substrate.
 - **Option C:** Hybrid — unified brief covering both with substrate as Phase 1.
+- **Option D:** Atlas may propose a fourth option we missed.
 
-**Supporting artifacts** (read after the prep memo, before deciding):
+**Routing:** Atlas reads the prep memo + both research reports + ADRs 1-4 at session start. Produces structural recommendation under Opus (explicit Opus budget moment per ADR-002). David decides with Atlas's recommendation as substantial input. Logged as Full approval per ADR-004.
+
+**Supporting artifacts** (Atlas's read set):
+- [`docs/sessions/offline-work/2026-05-12-pre-session-prep.md`](./offline-work/2026-05-12-pre-session-prep.md) — the prep memo (304 lines)
 - [`docs/atlas/research/registries-research-report.md`](../atlas/research/registries-research-report.md) — 529 lines, 8-registry recommendation, Hermes substrate borrowings, multi-tenancy patterns
 - [`docs/atlas/research/best-practices-research-report.md`](../atlas/research/best-practices-research-report.md) — 564 lines, 10 failure modes, top-3 ADR recommendations, charter regression suite
 
-**What's preserved:** All framing decisions from tonight (Layer A scope, two-category taxonomy with conversion mechanic, two lifecycle shapes, 5-fork vocabulary with reconciliation patterns, multi-tenancy principle, self-improvement as system tenet, Business-Model Lead as Layer 2 template). These apply regardless of A/B/C direction.
+**What's preserved:** All framing decisions from tonight (Layer A scope, two-category taxonomy with conversion mechanic, two lifecycle shapes, 5-fork vocabulary with reconciliation patterns, multi-tenancy principle, self-improvement as system tenet, Business-Model Lead as Layer 2 template). These apply regardless of A/B/C/D direction.
 
-**Estimated time:** A/B/C decision ~10 min. Then 90-120 min for chosen direction's draft. Atlas review under Opus at end.
+**Estimated time:** Atlas review (~20-30 min under Opus). David decision (~10 min). Then 90-120 min for chosen direction's draft. Second Atlas review on the draft.
 
 ### Priority 2: Atlas charter update — wire in ADR-004
 
