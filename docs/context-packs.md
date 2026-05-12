@@ -82,7 +82,7 @@ The key thesis:
 
 ### Current Research State
 
-Day 1 child safety research exists, but Opus reviewed it and found it is not decision-grade yet.
+Day 1 child safety research exists, but earlier-model review found it is not decision-grade yet.
 
 Known issues:
 - Some claims may be stale, weakly sourced, or fabricated-looking.
@@ -118,11 +118,13 @@ SSH pattern:
 
 ### Hermes
 
-Hermes main agent works with OpenRouter when launched with:
+Hermes runs under [hermes-workspace](https://github.com/outsourc-e/hermes-workspace) as the daily-driver UI. Provider is **Anthropic direct via Claude Pro/Max OAuth** — flat subscription, not metered API. The `ANTHROPIC_API_KEY` in `~/.hermes/.env` is a dormant fallback for rate-limit overflow only. See [`docs/decisions/ADR-002`](decisions/ADR-002-anthropic-oauth-over-api-key.md).
 
-`OPENROUTER_API_KEY="$OPENROUTER_API_KEY" hermes`
+Gateway runs on `:8642` (loopback), dashboard on `:9119`, Workspace UI on `:3000`. Access via `ssh -L 3000:127.0.0.1:3000 hermes@159.223.166.217`.
 
-Delegation passed a simple subagent smoke test, but prior delegated research failed to write expected files. Inspect all outputs before trusting them.
+OpenRouter is paused (see ADR-002) and is **not** the active provider. Old references to `OPENROUTER_API_KEY="$OPENROUTER_API_KEY" hermes` are obsolete.
+
+Delegation: previous Hermes delegation tests had mixed results (subagents passed smoke tests but some research delegations failed to write expected files). Inspect outputs before trusting them.
 
 ### Known Security Rules
 

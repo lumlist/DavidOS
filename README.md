@@ -29,12 +29,15 @@ cd ~/hermes-workspace && pnpm dev          # :3000 (Workspace UI)
 
 ## Documentation map
 
-- **`docs/sessions/NEXT-SESSION-OPEN.md`** — current state and next session entry points
-- **`docs/sessions/submitted/`** — debriefs from completed sessions
-- **`docs/atlas/`** — Atlas memo library (archive, not active runtime)
-- **`docs/decisions/`** — Architecture Decision Records (ADRs)
-- **`docs/architecture/`** — stack diagrams and infrastructure docs
-- **`docs/workspace/`** — Workspace baseline configuration and patterns
+- [`docs/sessions/NEXT-SESSION-OPEN.md`](docs/sessions/NEXT-SESSION-OPEN.md) — current state and next session entry points
+- [`docs/sessions/REPO-HYGIENE-CHECKLIST.md`](docs/sessions/REPO-HYGIENE-CHECKLIST.md) — run after structural changes to prevent stale docs
+- [`docs/sessions/submitted/`](docs/sessions/submitted/) — debriefs from completed sessions
+- [`docs/atlas/`](docs/atlas/) — Atlas memo library (archive, not active runtime)
+- [`docs/decisions/`](docs/decisions/) — Architecture Decision Records (ADRs)
+- [`docs/architecture/`](docs/architecture/) — stack diagrams and infrastructure docs
+- [`docs/workspace/`](docs/workspace/) — Workspace baseline configuration and patterns
+- [`docs/project-registry.md`](docs/project-registry.md) — active projects, business idea pipeline
+- [`docs/tool-stack-inventory.md`](docs/tool-stack-inventory.md) — broader tool inventory and model policy
 
 ## Operating principles
 
