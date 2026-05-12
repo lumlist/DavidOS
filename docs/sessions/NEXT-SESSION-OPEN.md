@@ -1,7 +1,8 @@
 # Next Session — Open
 
-**Last updated:** 2026-05-11 (evening session close)
-**Last session:** 2026-05-11 afternoon/evening — Paperclip→Workspace migration, repo cleanup, ADR-004, Atlas registration. See `docs/sessions/submitted/` for the session-end debrief.
+**Last updated:** 2026-05-12 04:30 AM CDT (offline-work prep session)
+**Last formal session:** 2026-05-11 afternoon/evening — Paperclip→Workspace migration, repo cleanup, ADR-004, Atlas registration. See `docs/sessions/submitted/` for the session-end debrief.
+**Offline work done since last session:** 2026-05-12 02:17–04:30 AM CDT — M6b framing + parallel research subagents. See [`docs/sessions/offline-work/2026-05-12-pre-session-prep.md`](./offline-work/2026-05-12-pre-session-prep.md) for the primary pickup point.
 
 ---
 
@@ -32,17 +33,23 @@ ss -tlnp 2>/dev/null | grep -E "8642|9119|3000"
 
 ## Open threads — pick at session start
 
-### Priority 1: M6b — iZZi Builder Services research + scoping
+### Priority 1: Resume from offline prep — A/B/C direction decision
 
-**What it is:** Research-led shaping of iZZi Builder Services. Direction is consulting + tooling combo targeting some mix of (A) solo founders building AI products who are technically capable but overwhelmed by tool sprawl, (B) non-technical founders/operators who want an AI workspace, (C) small businesses (5-50 people) needing an "AI lead" without deep tooling experience.
+**Primary pickup:** [`docs/sessions/offline-work/2026-05-12-pre-session-prep.md`](./offline-work/2026-05-12-pre-session-prep.md)
 
-**Two phases:**
-1. AI-assisted research — landscape scan of current AI consulting/tooling offerings, pricing benchmarks, what's working and what's commoditized, where the wedge is between targets A/B/C
-2. Scoped one-pager — informed by phase 1, commit to a target customer/wedge/pricing/sequence, draft, commit, move project-registry.md from Exploring → Active
+**TL;DR:** Tonight's offline work reframed M6b through five structural exchanges, then parallel research subagents returned findings suggesting the direction itself needs a structural decision before drafting continues. Three options held for fresh judgment:
 
-**Why this is queued and not done:** Open-ended scoping deserves a fresh focused session, not tail-end attention. The Phase 1 research has compounding value — keeps the strategy open to amendment based on what we learn rather than committing prematurely.
+- **Option A:** Continue M6b as scoped (intake-to-handoff system). Fold research into risk section.
+- **Option B (Computer's recommendation):** Pivot to substrate-first (charter regression + tool registry + registries + observations loop). M6b moves to session after substrate.
+- **Option C:** Hybrid — unified brief covering both with substrate as Phase 1.
 
-**Estimated time:** 90-120 min (research ~45 min, scoping ~30 min, drafting ~45 min)
+**Supporting artifacts** (read after the prep memo, before deciding):
+- [`docs/atlas/research/registries-research-report.md`](../atlas/research/registries-research-report.md) — 529 lines, 8-registry recommendation, Hermes substrate borrowings, multi-tenancy patterns
+- [`docs/atlas/research/best-practices-research-report.md`](../atlas/research/best-practices-research-report.md) — 564 lines, 10 failure modes, top-3 ADR recommendations, charter regression suite
+
+**What's preserved:** All framing decisions from tonight (Layer A scope, two-category taxonomy with conversion mechanic, two lifecycle shapes, 5-fork vocabulary with reconciliation patterns, multi-tenancy principle, self-improvement as system tenet, Business-Model Lead as Layer 2 template). These apply regardless of A/B/C direction.
+
+**Estimated time:** A/B/C decision ~10 min. Then 90-120 min for chosen direction's draft. Atlas review under Opus at end.
 
 ### Priority 2: Atlas charter update — wire in ADR-004
 
@@ -71,7 +78,7 @@ ADR-004 (Workspace-native approval mechanism) shipped this session. Atlas's pers
 
 ## Reference paths
 
-- Repo: `/home/hermes/projects/personal-ai-workspace/` (HEAD `1493b6e`)
+- Repo: `/home/hermes/projects/personal-ai-workspace/` (HEAD will fast-forward on next `git pull` to the offline-prep commit)
 - Hermes config: `~/.hermes/config.yaml` (atlas personality added today)
 - Workspace install: `~/hermes-workspace/`
 - Canonical docs map: see root [README](../../README.md)

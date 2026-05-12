@@ -26,6 +26,9 @@
 | 2026-05-11 | Light | Skip Hermes update tonight (`9a63b5f → e855825`); take at next session start before substantive work | Approved | n/a (tactical) | [Session-end debrief](../sessions/submitted/2026-05-12T04-00-session-end.md) |
 | 2026-05-11 | Light | Defer M6b iZZi Builder Services scoping to next session; preserve fresh attention for research + scoping arc | Approved | n/a (tactical) | [Session-end debrief](../sessions/submitted/2026-05-12T04-00-session-end.md) |
 | 2026-05-11 | Light | M6b approach: AI-assisted research phase before committing to one-pager; combine consulting + tooling targeting solo-founder / non-technical-operator / small-business mix | Approved (open to amendment) | 2026-08-11 | [Session-end debrief](../sessions/submitted/2026-05-12T04-00-session-end.md) |
+| 2026-05-12 | Light | Pre-session offline prep on M6b framing (Layer A scope, two-category taxonomy with conversion, 5-fork vocabulary, multi-tenancy principle, self-improvement as system tenet, Business-Model Lead as Layer 2 template) | Approved as pre-Atlas thinking (subject to Atlas review next session) | 2026-08-12 | [Offline-work memo](../sessions/offline-work/2026-05-12-pre-session-prep.md) |
+| 2026-05-12 | Light | Parallel research subagent scope: registries + best-practices for AI-system risk and self-improvement | Approved | n/a (tactical) | [Offline-work memo](../sessions/offline-work/2026-05-12-pre-session-prep.md) |
+| 2026-05-12 | Light | Defer A/B/C direction decision (continue M6b vs. pivot to substrate-first vs. hybrid) to fresh judgment at next session start | Approved | n/a (tactical) | [Offline-work memo](../sessions/offline-work/2026-05-12-pre-session-prep.md) |
 
 ## Revocations and modifications
 
