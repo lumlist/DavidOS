@@ -22,4 +22,4 @@
 (things explicitly not to work on tonight. Stops scope creep at the front door.)
 
 ## Constraints
-(spend ceiling, model rules, anything else. Default: Sonnet-class only, no Opus without explicit approval. Today's OpenRouter cap: $25, used $7.84 at session open, available $17.16.)
+(spend ceiling, model rules, anything else. Default: Sonnet-class only, no Opus without explicit approval. Auth is Claude Pro/Max OAuth via hermes-workspace — flat subscription, no per-call metering. See ADR-002. OpenRouter is paused; if rate-limited, hot-swap to API key per ADR-002.)

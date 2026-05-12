@@ -8,8 +8,17 @@ Filename: `ADR-NNN-short-kebab-case-title.md`
 
 Status values: `Proposed`, `Accepted`, `Deprecated`, `Superseded by ADR-XXX`
 
+## Creating a new ADR
+
+Copy [`ADR-template.md`](./ADR-template.md) to `ADR-NNN-short-title.md`, fill it in, and add a line to the index below.
+
 ## Index
 
 - [ADR-001](./ADR-001-adopt-hermes-workspace.md) — Adopt hermes-workspace over custom UI build (2026-05-11)
 - [ADR-002](./ADR-002-anthropic-oauth-over-api-key.md) — Anthropic OAuth over API key for daily driver (2026-05-11)
 - [ADR-003](./ADR-003-paperclip-frozen-atlas-memo-library.md) — Paperclip frozen; Atlas as memo library (2026-05-11)
+
+## Pending / candidate ADRs
+
+- ADR-004 — Workspace-native approval mechanism (replacement for Paperclip `[APPROVAL: <kind>]` tags)
+- Retro-ADR for Stage 1 folder layout (`raw/wiki/output/archive/daily/atlas` curation scheme)
