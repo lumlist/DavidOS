@@ -17,6 +17,7 @@ At the very end of last night's session, David captured a verbatim 11-point outc
 3. Does a "Phase State / Operating Mode" substrate item need to exist so Atlas knows which phase he's advising in (foundation / first-revenue / portfolio)?
 4. Is "milestone tracking" a missing substrate item or covered by Decisions Register + Session-Start Manifest?
 5. Is "zero-setup session resumption" sufficiently addressed by Session-Start Manifest, or does it need its own item?
+6. Skill-first framing: does the [Anthropic Agent Skills influence note](../charter/influences/2026-05-13-anthropic-agent-skills-video.md) change SOUL.md, the Substrate Brief, and the 5-step path? Tentative recommendation in the note: "if a piece of substrate can be a skill file, it should be." Decide whether to adopt this as ADR-005 or to keep it as influence-under-consideration.
 
 **Do not skip this review.** Step 1 SOUL.md finishing will be biased by whatever framing exists at the moment we resume. If the charter document changes the framing, we want it changing the SOUL.md, not getting added afterward.
 
