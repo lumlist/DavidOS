@@ -1,7 +1,24 @@
 # Next Session — Open
 
-**Last updated:** 2026-05-12 11:05 PM CDT (session-end wrap)
+**Last updated:** 2026-05-13 03:39 AM CDT (post-wrap charter capture)
 **Last session:** [2026-05-12 evening](./2026-05-12-session-record.md) — infrastructure recovery + Hermes internals research + Atlas SOUL.md drafting (paused mid-review). No substrate items shipped. Atlas activation deferred to this session.
+
+---
+
+## ⚠ Before Step 1: Review the new charter primary source
+
+At the very end of last night's session, David captured a verbatim 11-point outcome list, 3 frustrations, and 3 clarifying responses. This is the **first primary-source charter document** for DavidOS and likely changes the shape of the SOUL.md, the Substrate Brief, and the 5-step path.
+
+**Read first:** [`docs/charter/outcomes-and-frustrations-2026-05-13.md`](../charter/outcomes-and-frustrations-2026-05-13.md)
+
+**Decide before continuing to Step 1:**
+1. Which of the 11 outcomes belong in SOUL.md (as identity/principles) versus in the Charter Regression Suite (as testable system properties) versus in the Substrate Brief (as build items)?
+2. Does the 5-step path need reordering to better serve David's stated priority sequence — foundation now → first revenue business soon → broader idea portfolio later?
+3. Does a "Phase State / Operating Mode" substrate item need to exist so Atlas knows which phase he's advising in (foundation / first-revenue / portfolio)?
+4. Is "milestone tracking" a missing substrate item or covered by Decisions Register + Session-Start Manifest?
+5. Is "zero-setup session resumption" sufficiently addressed by Session-Start Manifest, or does it need its own item?
+
+**Do not skip this review.** Step 1 SOUL.md finishing will be biased by whatever framing exists at the moment we resume. If the charter document changes the framing, we want it changing the SOUL.md, not getting added afterward.
 
 ---
 
