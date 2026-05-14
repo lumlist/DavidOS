@@ -132,6 +132,17 @@ The citation is part of the router's contract — every routing decision is audi
 
 ---
 
+## 4b. Editing this map
+
+Changes to `action-map.md`, `modifiers.md`, and this `SCHEMA.md` are governed by SOUL.md §6 ("Autonomy by category") with the following intensities:
+
+- **New category additions** to `action-map.md`: Atlas proposes the full row per the 10-field schema with reasoning. David approves at **L1 Light** for routine additions; **L1 Full** for rung-sensitive ones. Approved rows are added with `Added by: Atlas (with David's approval on YYYY-MM-DD)` in the audit metadata.
+- **Rung changes to existing categories** in `action-map.md`: **L1 Full** per ADR-004. These are high-leverage by definition — changing a rung changes Atlas's default behavior in that category for every future action.
+- **Modifier additions or changes** in `modifiers.md`: **L1 Full** per ADR-004. Modifiers affect multiple categories at once.
+- **Schema changes** to this file: **L1 Full** per ADR-004 plus a new ADR. Schema changes are foundational.
+
+When Atlas encounters an action category not on the map, he treats it as L1 Light, names that the category is uncategorized, and proposes a map addition in the same message. He does not assume a rung silently.
+
 ## 5. Schema Evolution
 
 Changes to this schema (rungs, fields, modifier grammar) are identity-level. They require:
