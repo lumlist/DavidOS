@@ -1,0 +1,296 @@
+[00:00:00] I've been using Hermes Agent since the
+[00:00:01] beginning and last few weeks I realized
+[00:00:03] I've been using it all wrong. You see
+[00:00:05] people try to compare Hermes Agent to
+[00:00:07] Claude or Codex like it's meant to do
+[00:00:09] the same thing and I truly believed and
+[00:00:12] wanted Hermes Agent to replace those two
+[00:00:14] so that they can build apps, build
+[00:00:16] systems, build content inside of Hermes
+[00:00:19] and not touch Claude or Codex anymore
+[00:00:22] other than the models from them. And it
+[00:00:24] absolutely can do all those things, but
+[00:00:26] as we can see here it's slower and less
+[00:00:29] token efficient than Claude or Codex in
+[00:00:32] building apps or internal tools or
+[00:00:34] systems. So these days I prefer to use
+[00:00:37] Hermes as an operator or AI employee
+[00:00:40] within the system that I build with
+[00:00:42] Claude or Codex. That's why in this
+[00:00:44] video I wanted to show you my favorite
+[00:00:46] 15 Hermes Agent use cases that I found
+[00:00:49] that I use personally in my life or
+[00:00:51] business and how you can apply them to
+[00:00:54] your business and using these ideas and
+[00:00:56] principles. And before we go into that,
+[00:00:58] let me just show you what I'm working on
+[00:00:59] right now. So this is something I'm
+[00:01:02] working on and testing for our business
+[00:01:04] Press Wiz. I'm building this CLI that
+[00:01:07] can connect your agent to the
+[00:01:10] marketplace and order backlinks on your
+[00:01:11] behalf so you don't have to search
+[00:01:14] and order yourself. The agent can do all
+[00:01:17] of that on your behalf.
+[00:01:20] So that's the idea. I'm still testing
+[00:01:21] this, but this is the example where I
+[00:01:24] would be using
+[00:01:25] Codex and not Hermes to build this and
+[00:01:29] to test this. And Hermes can operate
+[00:01:31] this CLI and order backlinks for me, but
+[00:01:34] I wouldn't be using Hermes to build this
+[00:01:37] actual project. So this covers this
+[00:01:40] example and let's go back to my favorite
+[00:01:42] use cases for Hermes Agent. So these are
+[00:01:45] the 15 ones I use regularly. Some of
+[00:01:48] these are still in testing, but most of
+[00:01:50] them I use every day. And if you want
+[00:01:53] more ideas, you can find a ton of them
+[00:01:55] here on News Research website.
+[00:01:59] And you can just browse and get ideas
+[00:02:02] how people are using Hermes Agent. So,
+[00:02:04] going back here, SEO Analyst is
+[00:02:08] something that I'm currently mostly
+[00:02:10] testing. It's still not live. It's still
+[00:02:12] not implemented fully.
+[00:02:13] And it gives the agent access to Search
+[00:02:16] Console and Ahrefs, Semrush, whatever
+[00:02:18] you want. And you can go and search on
+[00:02:22] your console and then create a report
+[00:02:25] and then also search the web and get
+[00:02:27] Ahrefs APIs about your competitors and
+[00:02:29] so on and then create a comprehensive
+[00:02:32] either a report or actually take action
+[00:02:34] on those things itself. Lead Scraper
+[00:02:37] Agent is next and uses Apify, Far Crawl,
+[00:02:40] Serper, or Clay to find and enrich
+[00:02:43] leads. And we use that for outbound in
+[00:02:47] Press Release as well.
+[00:02:49] And I'm going to show you how the output
+[00:02:50] looks. It's basically a CSV file
+[00:02:53] with a bunch of leads. I'll mask these
+[00:02:55] for privacy, but yeah, essentially
+[00:02:58] like this found 2,000
+[00:03:01] SEO agencies, which are ICP. And we then
+[00:03:06] enrich them using Clay and using AnyMail
+[00:03:09] Finder and these various tools to find
+[00:03:11] emails, to find LinkedIns, and so on.
+[00:03:13] And then we can do
+[00:03:16] instantly,
+[00:03:18] which sends via MCP
+[00:03:21] all the emails.
+[00:03:22] Or we have a custom integration that
+[00:03:24] does LinkedIn.
+[00:03:26] So, that's a really useful one if you do
+[00:03:29] outbound.
+[00:03:30] Sales CRM, in my previous video, I'm
+[00:03:33] going to link it somewhere above,
+[00:03:36] I used Hermes Agent to connect to my
+[00:03:39] HighLevel CRM and to do inbox
+[00:03:43] email inbox triage,
+[00:03:45] create notes about clients, research
+[00:03:47] clients that come in, and
+[00:03:50] basically create reports or whatever we
+[00:03:52] need from the CRM, we can just ask the
+[00:03:56] agent and it can create the report for
+[00:04:00] us.
+[00:04:02] Sales call analyst, this is something we
+[00:04:04] are implementing right now, but
+[00:04:06] basically taking all the transcripts
+[00:04:08] automatically after the call, it
+[00:04:10] generates a transcript, it sends it to
+[00:04:12] the agent, and then the agent can create
+[00:04:15] next steps and tasks within the CRM for
+[00:04:19] our staff. The next one is the research
+[00:04:21] agent, and I'm using that every day. It
+[00:04:23] creates a summary for me what's new on
+[00:04:26] social media, on X, on YouTube. So, I
+[00:04:29] don't have to go and doom scroll for 1
+[00:04:31] hour just to find out what's been going
+[00:04:33] on, and it follows Claude, Codex,
+[00:04:37] news research, whatever, just to get me
+[00:04:40] the things that interest me, and the
+[00:04:42] beauty of it is it's self-improving, so
+[00:04:46] that when I rate the results, it comes
+[00:04:49] up with better results
+[00:04:51] the next day. And this is how it looks.
+[00:04:53] So, basically every day I receive
+[00:04:56] one message like this,
+[00:04:59] and it's all the stuff that interests me
+[00:05:01] about AI, X. So, I don't have to go and
+[00:05:05] doom scroll
+[00:05:07] all the time. So, this is still
+[00:05:08] improving, obviously, and as time goes
+[00:05:11] on, I'll only get the stuff that really,
+[00:05:13] really interests me. Next, we have the
+[00:05:16] content producer. So, if let's say I
+[00:05:19] spot a news about, let's say Hermes
+[00:05:22] agent, I can send this to my Hermes
+[00:05:24] agent, and then it creates the idea for
+[00:05:28] a video. That's kind of how I came up
+[00:05:30] with this. I saw the blog post here,
+[00:05:34] and I sent it to my agent, and we worked
+[00:05:36] out an idea for this video, how we can
+[00:05:40] create this. So, it it adjusts the
+[00:05:42] sources, and it creates the package or
+[00:05:46] outline or scripts, whatever you need,
+[00:05:48] thumbnails even.
+[00:05:50] Re-purposing, once the video is
+[00:05:52] finished, you can create newsletters,
+[00:05:55] blog posts, LinkedIn posts, X posts, and
+[00:05:58] so on. I'm still not using this fully
+[00:06:01] and still testing a lot of moving parts
+[00:06:04] here. Second brain, the thing everybody
+[00:06:06] likes.
+[00:06:08] So, I'm using Notebook LM and I've made
+[00:06:10] videos previously about Notebook LM and
+[00:06:13] Councils.
+[00:06:15] And Notebook LM is just my preferred
+[00:06:18] tool. Obsidian, I've only briefly
+[00:06:20] tested, everyone loves it.
+[00:06:23] I will give it a try, I promise, and
+[00:06:25] then I will report back.
+[00:06:27] And Pinecone is a bit more advanced,
+[00:06:29] it's a database. So, it's a whole
+[00:06:31] different video.
+[00:06:34] Here, we have the executive assistant.
+[00:06:36] So, it's straightforward pretty much,
+[00:06:38] you give it access to your inbox,
+[00:06:40] calendar, tasks, meetings, notes, and it
+[00:06:43] can just help you out, triage,
+[00:06:46] tell you what's on your schedule, so you
+[00:06:48] don't miss a meeting or things like
+[00:06:50] that, and to
+[00:06:51] tell it what happened in the meeting and
+[00:06:53] it can create notes for you, pretty easy
+[00:06:55] to understand.
+[00:06:57] Business analyst, of course, depending
+[00:06:59] on your business, you would have
+[00:07:00] different Excel sheets, dashboards,
+[00:07:04] whatever you can imagine, just point
+[00:07:06] your agent there. If you have the MCP or
+[00:07:08] CLI connected there, give it access, and
+[00:07:12] it can create wonderful reports, and it
+[00:07:14] can monitor things for you, and yeah,
+[00:07:17] just figure out how you can give it
+[00:07:19] access to things. Obviously, scope it so
+[00:07:22] that you don't give it sensitive
+[00:07:23] information.
+[00:07:24] And
+[00:07:25] we have operations employee here, any
+[00:07:29] recurring workflow, process, checklist,
+[00:07:32] monitoring,
+[00:07:33] it can do that for you, and it has a
+[00:07:35] cron job, you can schedule it on a
+[00:07:37] recurring basis, so it's really good
+[00:07:39] at that. This is a bit generic, but
+[00:07:42] depending on your business, this can be
+[00:07:44] applied differently.
+[00:07:48] Customer support, this is great. So, for
+[00:07:50] e-commerce, for example, you can
+[00:07:53] set it to monitor tickets, to answer
+[00:07:55] tickets, to escalate tickets. Very good
+[00:07:58] for customer support.
+[00:08:01] Shopify actually has both the API and an
+[00:08:04] MCP. So, you can definitely connect your
+[00:08:07] agent there. And like my example about
+[00:08:10] the CRM, it can create reports. You can
+[00:08:13] ask it, "Hey, how many orders we had
+[00:08:14] today?" It can check for you and report
+[00:08:16] back. So, you don't have to log in to
+[00:08:18] Shopify.
+[00:08:20] This is just one example, but anything
+[00:08:23] that you can read on the dashboard, the
+[00:08:26] agent can read as well. So, you can see
+[00:08:28] how that powerful that can be.
+[00:08:30] And now we come to one of my favorite
+[00:08:32] use cases, and this is the investment
+[00:08:34] analyst.
+[00:08:35] So, basically, how I use it is I give it
+[00:08:37] a list of stocks, and it goes through my
+[00:08:39] preferred sources to investigate and to
+[00:08:43] get data, up-to-date data.
+[00:08:46] So, it crawls everything with Firecrawl,
+[00:08:48] and then comes back with aggregated
+[00:08:51] result, and it gives me advice and
+[00:08:53] summary about what's going on, how are
+[00:08:56] the earnings, and so on. So, it looks
+[00:08:58] like this.
+[00:09:00] Obviously, it's called Warren, my
+[00:09:02] investment analyst. Yeah, I just give it
+[00:09:05] a bunch of stocks to research, and I
+[00:09:08] don't know why this gold here is, but
+[00:09:10] yeah, it probably had some context left
+[00:09:12] over.
+[00:09:13] And yeah, it said that Microsoft is the
+[00:09:15] best. I'm not going to argue with this.
+[00:09:17] It's just
+[00:09:18] one example how you can use this agent.
+[00:09:21] It also has my portfolio tracker that I
+[00:09:24] created with Cloud and Codex. And now
+[00:09:27] this agent can use the portfolio
+[00:09:29] tracker. I just send it a screenshot
+[00:09:30] when I make a trade, and it
+[00:09:33] automatically logs everything into the
+[00:09:35] portfolio tracker, which has now
+[00:09:37] everything I need, including options
+[00:09:39] tracking.
+[00:09:41] Which is something I was missing with
+[00:09:43] all the these other
+[00:09:45] portfolio trackers.
+[00:09:48] Okay, and then the last we have the
+[00:09:51] advisory council. And I actually made a
+[00:09:53] video previously about the Notebook LM
+[00:09:56] advisory council. The idea is to
+[00:09:58] populate notebooks with YouTube videos,
+[00:10:02] books, interviews, transcripts of
+[00:10:05] your favorite
+[00:10:07] It can be a YouTuber, it can be an
+[00:10:09] influencer, or a writer.
+[00:10:12] And then you can query Notebook LM about
+[00:10:16] their knowledge and to actually get
+[00:10:17] context out of this material
+[00:10:20] so that you can use it in Cloud. And
+[00:10:23] I'll just show you briefly
+[00:10:25] how this looks. Notebook LM
+[00:10:27] council. One second.
+[00:10:30] So, let's say which
+[00:10:33] use cases would
+[00:10:35] Tony Robbins and Alex Hormozi have
+[00:10:39] for Hermes agent.
+[00:10:41] And then we can wait and see the result.
+[00:10:44] So, we'll just pause this video so you
+[00:10:46] can actually see how this works. And it
+[00:10:48] comes back with results from Tony
+[00:10:50] Robbins and Alex Hormozi. And Tony said
+[00:10:54] event intelligence engine. You can see
+[00:10:56] how this context works because Tony is
+[00:10:59] in events.
+[00:11:00] Personalized coaching.
+[00:11:03] Yeah, and you can see sales call
+[00:11:05] intelligence, obviously, we mentioned
+[00:11:06] that.
+[00:11:07] Offer optimization agent, great.
+[00:11:10] Content repurposing, great, yeah.
+[00:11:13] Customer proof flywheel. Yeah,
+[00:11:14] absolutely.
+[00:11:16] So,
+[00:11:17] this wraps it up, honestly, for this
+[00:11:19] video. You can see the power of Hermes
+[00:11:22] agent. I'll show you my personal use
+[00:11:25] cases that I'm using everyday. And just
+[00:11:28] think about it and see how you can apply
+[00:11:31] it to your business. Find a bottleneck,
+[00:11:33] find something that takes your time,
+[00:11:34] even if it's scrolling through social
+[00:11:36] media. You can automate that so that you
+[00:11:38] can get
+[00:11:40] more
+[00:11:41] for your time
+[00:11:43] with Hermes Agent. Let me know in the
+[00:11:45] comments, have you found any interesting
+[00:11:48] use cases for Hermes Agent? And please
+[00:11:50] subscribe and like the video if you
+[00:11:52] liked it. And if you have any issues or
+[00:11:54] questions, feel free to post below.
+[00:11:57] Thank you.
