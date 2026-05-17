@@ -6,9 +6,10 @@
 > Intent Protocol *direction* is ratified by
 > [ADR-005](../decisions/ADR-005-governed-intent-protocol.md) (2026-05-17,
 > L1 Full per [ADR-004](../decisions/ADR-004-workspace-native-approval-mechanism.md);
-> indexed in `docs/decisions/approvals-log.md` entries R1-R6). The spec,
-> registries, manifests, and Decision Protocol skill are **later
-> lifecycle stages, not yet built and each separately gated**. Do not
+> indexed in `docs/decisions/approvals-log.md` entries R1-R6). The GIP spec (`gip-spec.md`) is built and committed;
+> the registries, manifests, and Decision Protocol skill remain **later
+> lifecycle stages,
+> not yet built and each separately gated**. Do not
 > treat the absence of those artifacts as approval to implement them
 > ad hoc — follow the lifecycle below.
 
@@ -59,6 +60,10 @@ act as a decision-maker.
 - `proposals/2026-05-17-mv-gip-proposal.md` — the Minimum Viable Governed
   Intent Protocol proposal (C1–C5 incorporated). **Direction ratified by
   ADR-005 (2026-05-17); implementation stages still separately gated.**
+- `gip-spec.md` — the operator-usable GIP implementation reference.
+  Consolidates the ADR-005-ratified direction by pointer; introduces no
+  design changes. **Lifecycle position: proposal → ADR → spec ✓;
+  registries next.**
 
 ## What is intentionally NOT here yet
 
