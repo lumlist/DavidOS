@@ -1,6 +1,6 @@
 # DavidOS
 
-Personal AI operating system for David Izzard. Foundation layer for FamilyAI, iZZi Builder Services, and downstream projects.
+Personal AI operating system for David Izzard. A tool-agnostic AIOS control plane (ADR-005); FamilyAI and downstream projects are built through it, not beneath it.
 
 ## Current stack
 
@@ -43,7 +43,7 @@ cd ~/hermes-workspace && pnpm dev          # :3000 (Workspace UI)
 
 - iZZi customer-zero pattern: David's outcome comes first; never trade it for reusability. Classify each decision as David-specific, reusable, or both. Generalization is a second-pass concern, never a first-pass constraint (SOUL.md §5).
 - Sonnet is the default; Opus only for high-judgment work, with explicit approval logged in approvals-log.md (ADR-002; SOUL.md §5).
-- Foundation-first strategy: DavidOS → FamilyAI → iZZi Builder Services → downstream projects
+- DavidOS is the tool-agnostic AIOS control plane (ADR-005); the current build sequence is the GIP governance lifecycle — see docs/governance/README.md
 
 ## Vision and design principles
 
