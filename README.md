@@ -41,8 +41,8 @@ cd ~/hermes-workspace && pnpm dev          # :3000 (Workspace UI)
 
 ## Operating principles
 
-- iZZi customer-zero pattern: every config/architectural decision should be reusable across future iZZi AI Systems customers OR explicitly David-specific
-- Sonnet-class only; no Opus without explicit approval
+- iZZi customer-zero pattern: David's outcome comes first; never trade it for reusability. Classify each decision as David-specific, reusable, or both. Generalization is a second-pass concern, never a first-pass constraint (SOUL.md §5).
+- Sonnet is the default; Opus only for high-judgment work, with explicit approval logged in approvals-log.md (ADR-002; SOUL.md §5).
 - Foundation-first strategy: DavidOS → FamilyAI → iZZi Builder Services → downstream projects
 
 ## Vision and design principles
