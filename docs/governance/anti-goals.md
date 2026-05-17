@@ -3,11 +3,14 @@
 **Status:** Normative constraint artifact. Created 2026-05-17.
 **Approval class:** L1 Light (standing constraint; not pure documentation).
 
-> **NOT APPROVED ARCHITECTURE.** This fence constrains the MV-GIP proposal
-> and all governance work, but the proposal it constrains is itself not in
-> force until ADR-005 + `approvals-log.md` entries exist. This file is a
-> working draft awaiting David's approval per
-> [ADR-004](../decisions/ADR-004-workspace-native-approval-mechanism.md).
+> **GIP DIRECTION RATIFIED — THIS FENCE IS IN FORCE.** The Governed
+> Intent Protocol direction is ratified by
+> [ADR-005](../decisions/ADR-005-governed-intent-protocol.md) (2026-05-17,
+> L1 Full per [ADR-004](../decisions/ADR-004-workspace-native-approval-mechanism.md);
+> `approvals-log.md` R1-R6). This anti-goals fence is therefore **active
+> and binding** on all governance work. Implementation artifacts (spec,
+> registries, manifests, Decision Protocol skill) remain separately
+> gated; each must be justified against this fence before it is built.
 
 ---
 

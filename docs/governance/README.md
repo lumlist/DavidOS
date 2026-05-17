@@ -2,12 +2,15 @@
 
 **Status:** Orientation document for `docs/governance/`. Created 2026-05-17.
 
-> **NOT APPROVED ARCHITECTURE.** Nothing in this tree is in force until
-> ADR-005 is created and the relevant `docs/decisions/approvals-log.md`
-> entries are appended. Until then, every document here — including the
-> MV-GIP proposal — is a **working draft awaiting David's L1 Full
-> approval per [ADR-004](../decisions/ADR-004-workspace-native-approval-mechanism.md)**.
-> Do not implement against these documents.
+> **GIP DIRECTION RATIFIED — IMPLEMENTATION NOT YET BUILT.** The Governed
+> Intent Protocol *direction* is ratified by
+> [ADR-005](../decisions/ADR-005-governed-intent-protocol.md) (2026-05-17,
+> L1 Full per [ADR-004](../decisions/ADR-004-workspace-native-approval-mechanism.md);
+> indexed in `docs/decisions/approvals-log.md` entries R1-R6). The spec,
+> registries, manifests, and Decision Protocol skill are **later
+> lifecycle stages, not yet built and each separately gated**. Do not
+> treat the absence of those artifacts as approval to implement them
+> ad hoc — follow the lifecycle below.
 
 ---
 
@@ -53,9 +56,9 @@ act as a decision-maker.
 
 - `anti-goals.md` — the overbuild-prevention fence. What DavidOS will
   deliberately NOT build now. Read this before proposing any new build.
-- `proposals/2026-05-17-mv-gip-proposal.md` — the working-draft Minimum
-  Viable Governed Intent Protocol proposal (C1–C5 incorporated).
-  **Awaiting ADR-005 + approvals-log entries before it is in force.**
+- `proposals/2026-05-17-mv-gip-proposal.md` — the Minimum Viable Governed
+  Intent Protocol proposal (C1–C5 incorporated). **Direction ratified by
+  ADR-005 (2026-05-17); implementation stages still separately gated.**
 
 ## What is intentionally NOT here yet
 

@@ -1,17 +1,19 @@
 # Proposal — Minimum Viable Governed Intent Protocol & Context-Governance Layer
 
-**Status:** PROPOSAL — working draft. **NOT APPROVED ARCHITECTURE.**
+**Status:** RATIFIED (direction) by ADR-005, 2026-05-17.
 **Date:** 2026-05-17
 **Author:** Atlas (claude-opus-4-7, David-approved Opus governance session)
 **Supersedes in scope:** the Part B governance design and Fix 13 framing in
 `../../audits/preparation/2026-05-14-atlas-comprehensive-fix-and-governance-proposal.md`
 
-> This document is a working draft. It is **not in force** and does **not**
-> represent approved DavidOS architecture until **ADR-005 is created** and
-> the corresponding entries are appended to
-> `../../decisions/approvals-log.md`. Until both exist, nothing here may be
-> implemented. Approval is governed by
-> [ADR-004](../../decisions/ADR-004-workspace-native-approval-mechanism.md).
+> The **GIP direction in this document is ratified** by
+> [ADR-005](../../decisions/ADR-005-governed-intent-protocol.md)
+> (2026-05-17, L1 Full per
+> [ADR-004](../../decisions/ADR-004-workspace-native-approval-mechanism.md);
+> indexed in `../../decisions/approvals-log.md` entries R1-R6). The spec,
+> registries, manifests, and Decision Protocol skill described below are
+> **later lifecycle stages — not yet built and each separately gated**.
+> This document is the ratified direction, not an implementation.
 
 ---
 
