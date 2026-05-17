@@ -14,6 +14,8 @@ The goal: prevent the **parallel-realities problem** — where today's truth liv
 - After moving large amounts of content
 - Before a long session break (going dark for >1 week)
 
+> Start-of-work and pre-push git divergence is handled separately — see the Remote reconciliation step in `docs/atlas/context-refresh-protocol.md` (Level 1). This checklist remains end-of-session / structural-change only.
+
 Skip for:
 - Routine content writes inside an established structure
 - Single-file edits that don't change canonical truth

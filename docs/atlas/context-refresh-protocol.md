@@ -36,8 +36,25 @@ Check:
 1. Current repo.
 2. Current branch.
 3. Git status.
+3a. Remote reconciliation (mandatory at session start and before any push). Run `git fetch origin`, then check divergence vs upstream. If the local branch is behind or has diverged from origin, STOP and reconcile before doing any work or creating commits — do not build on a stale base. Not required before every commit; a session-start fetch covers normal cadence unless the session runs long enough that origin may have moved.
 4. Recent commits.
 5. Immediate relevant file preview.
+
+Standard divergence check:
+
+```
+git fetch origin
+git status -sb
+git rev-list --left-right --count HEAD...@{u}
+```
+
+Read `N M`: `0 N` behind-only (fast-forward up, safe); `N 0` ahead-only (normal push later, safe); `N M` both nonzero = DIVERGED.
+
+If local and remote have diverged:
+- Characterize first, read-only: list the commits each side has and check file overlap between them.
+- No overlap / clean: rebase local commits onto origin, then fast-forward push. Never force push.
+- Overlap or any conflict: stop, show the conflict, do not resolve unilaterally — surface to David for the integration decision.
+- Rebasing a diverged state rewrites local commit SHAs and is approval-gated, not autonomous.
 
 ### Level 2: Workstream Context Review
 
