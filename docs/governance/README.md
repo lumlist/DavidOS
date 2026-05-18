@@ -2,16 +2,20 @@
 
 **Status:** Orientation document for `docs/governance/`. Created 2026-05-17.
 
-> **GIP DIRECTION RATIFIED — IMPLEMENTATION NOT YET BUILT.** The Governed
-> Intent Protocol *direction* is ratified by
+> **GIP DIRECTION RATIFIED — v1 CORE IMPLEMENTATION SHIPPED; FOLLOW-ONS
+> GATED.** The Governed Intent Protocol *direction* is ratified by
 > [ADR-005](../decisions/ADR-005-governed-intent-protocol.md) (2026-05-17,
 > L1 Full per [ADR-004](../decisions/ADR-004-workspace-native-approval-mechanism.md);
 > indexed in `docs/decisions/approvals-log.md` entries R1-R6). The GIP spec
-> (`gip-spec.md`) and the agent/substrate registries are built, committed,
-> and pushed; manifests and the Decision Protocol skill remain **later
-> lifecycle stages, not yet built and each separately gated**. Do not
-> treat the absence of those remaining artifacts as approval to implement
-> them ad hoc — follow the lifecycle below.
+> (`gip-spec.md`), the agent/substrate registries, the v1 project manifest,
+> and the Decision Protocol skill (Hermes-profile-local, audit-logged in
+> the repo) are all built, committed/recorded, and pushed. Further GIP
+> work — additional manifest types, the decision-log observability spine,
+> validators, action-map / modifier fixes (incl. R4), tool integrations,
+> /goal adoption, and any agents or workflows — remains **later lifecycle
+> stages, not yet built and each separately gated**. Do not treat the
+> absence of those remaining artifacts as approval to implement them ad
+> hoc — follow the lifecycle below.
 
 ---
 
@@ -63,19 +67,41 @@ act as a decision-maker.
 - `gip-spec.md` — the operator-usable GIP implementation reference.
   Consolidates the ADR-005-ratified direction by pointer; introduces no
   design changes. **Lifecycle position: proposal → ADR → spec ✓ →
-  registries ✓; manifests next.**
+  registries ✓ → manifests ✓ → Decision Protocol skill ✓ (GIP v1 core
+  chain shipped; follow-ons gated).**
 - `registries/agent-registry.md`, `registries/substrate-registry.md` — the
   GIP agent and substrate registries. Inventory only — no grants,
   manifests, activation, or authority. Created/committed/pushed 2026-05-18
   (commit `2d913ea`; approvals-log 2026-05-18, L1 Light under ADR-005).
-  **Lifecycle position: registries ✓; manifests next.**
+  **Lifecycle position: registries ✓.**
+- `manifests/project-build-loop.manifest.md`, `manifests/README.md` — the
+  v1 project manifest (the permission layer) and its orientation guard. A
+  standing, bounded, reversible build-loop capability grant:
+  principals=Atlas only, substrate=Hermes only, ceilings, non-grantable
+  set always re-gates, /goal named but not enabled.
+  Created/committed/pushed 2026-05-18 (commit `4e7c4bc`; approvals-log
+  2026-05-18, L1 Full under ADR-005). **Lifecycle position: manifest ✓.**
+- Decision Protocol skill — `davidos-decision-protocol`, authored
+  **Hermes-profile-local** (NOT a repo file, per gip-spec §13 / C5):
+  `~/.hermes/profiles/atlas/skills/devops/davidos-decision-protocol/`.
+  Operationalizes gip-spec §6 (envelope + registries + manifest +
+  action-map/modifiers/SCHEMA + §8 invariants → structured Decision;
+  decide-only, no execution). Creation audit-logged in the repo:
+  approvals-log 2026-05-18, L1 Full under ADR-005, commit `e3bd474`.
+  **Lifecycle position: Decision Protocol skill ✓.**
 
 ## What is intentionally NOT here yet
 
-Manifests (the permission layer; v1 = one project manifest), the Decision
-Protocol skill (authored in the Hermes profile, after the spec),
-validators, action-map / modifier fixes, and any tool integration. These
-are later lifecycle stages, gated on approvals that have not been given.
-ADR-005 (Accepted 2026-05-17, in `docs/decisions/`) and the agent/substrate
-registries are no longer pending — they are built; their prior listing
-here is removed. The remaining absences are deliberate, not an omission.
+The decision-log observability spine (`decision-log.md` — named by the v1
+manifest's `decision_log_target` but deliberately not created; gip-spec
+§11 schema only), additional manifest types (workflow / skill / script /
+substrate — schema-defined, unpopulated in v1), validators, action-map /
+modifier fixes (including the R4 spend/money + legal/privacy category
+gap), and any tool integration. These are later lifecycle stages, gated on
+approvals that have not been given. ADR-005, the agent/substrate
+registries, the v1 project manifest, and the Decision Protocol skill are
+no longer pending — they are built; their prior listing here is removed.
+/goal is named as a manifest-bound future surface but is **not adopted or
+enabled**. No agents or workflows are created — Karrigan/Hustler/Jeff/Steve
+remain named-future stubs with zero authority. The remaining absences are
+deliberate, not an omission.
