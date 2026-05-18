@@ -46,6 +46,7 @@
 | 2026-05-14 | Light | GOV-2 (retroactive): the 2026-05-14 comprehensive fix/governance proposal was authored on claude-opus-4-7 and never logged; logged now per that proposal's own B.7.5 recommendation | Approved (retroactive) | n/a (tactical) | [2026-05-14 proposal](../audits/preparation/2026-05-14-atlas-comprehensive-fix-and-governance-proposal.md) |
 | 2026-05-17 | Full | Model Selection v1: Opus-default control plane, Sonnet-delegated execution, no router; reverses SOUL.md §5 Sonnet-only rule (per ADR-006) | Approved | 2026-08-17 | ADR-006 |
 | 2026-05-18 | Light | Naming reconciliation: future UI-agent label Jobs→Steve across the four ratified GIP artifacts (ADR-005, MV-GIP proposal, gip-spec, anti-goals); label only — no decision, architecture, scope, or authority change; out-of-scope "Jobs" repo references untouched | Approved | Permanent | [ADR-005](./ADR-005-governed-intent-protocol.md) |
+| 2026-05-18 | Light | GIP registry creation: agent and substrate registries created as implementation artifacts under ADR-005; inventory only, no grants, manifests, activation, external-action authority, or agent creation | Approved | Permanent | [ADR-005](./ADR-005-governed-intent-protocol.md) |
 
 ## Revocations and modifications
 
