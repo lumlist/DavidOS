@@ -47,6 +47,7 @@
 | 2026-05-17 | Full | Model Selection v1: Opus-default control plane, Sonnet-delegated execution, no router; reverses SOUL.md §5 Sonnet-only rule (per ADR-006) | Approved | 2026-08-17 | ADR-006 |
 | 2026-05-18 | Light | Naming reconciliation: future UI-agent label Jobs→Steve across the four ratified GIP artifacts (ADR-005, MV-GIP proposal, gip-spec, anti-goals); label only — no decision, architecture, scope, or authority change; out-of-scope "Jobs" repo references untouched | Approved | Permanent | [ADR-005](./ADR-005-governed-intent-protocol.md) |
 | 2026-05-18 | Light | GIP registry creation: agent and substrate registries created as implementation artifacts under ADR-005; inventory only, no grants, manifests, activation, external-action authority, or agent creation | Approved | Permanent | [ADR-005](./ADR-005-governed-intent-protocol.md) |
+| 2026-05-18 | Full | GIP v1 project manifest (project-build-loop): a standing capability grant under ADR-005 — principals=Atlas only, substrate=Hermes only, reversible repo-scoped build-loop work ≤ L2, ceilings (spend 0 / no recipients / no irreversible-without-ask / no external sends / no credentials / no account access), non-grantable set always re-gates, /goal named but not enabled; manifests/README.md orientation guard added | Approved | 2026-08-17 | [ADR-005](./ADR-005-governed-intent-protocol.md) |
 
 ## Revocations and modifications
 
