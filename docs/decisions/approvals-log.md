@@ -44,6 +44,7 @@
 | 2026-05-17 | Light | Approved-fix sequencing triage adopted (BEFORE: 1,3,5,7,16 / DURING: 2,9A / AFTER: 6,8,10,11,12,14,15,17,13); pointer only — per-fix application logged when each is applied | Approved | 2026-08-17 | [proposal §15](../governance/proposals/2026-05-17-mv-gip-proposal.md) |
 | 2026-05-17 | Light | GOV-1: Opus (claude-opus-4-7) approved for this high-judgment governance session only, per SOUL.md §5 + davidos-session-operations §3 | Approved | n/a (tactical) | This session |
 | 2026-05-14 | Light | GOV-2 (retroactive): the 2026-05-14 comprehensive fix/governance proposal was authored on claude-opus-4-7 and never logged; logged now per that proposal's own B.7.5 recommendation | Approved (retroactive) | n/a (tactical) | [2026-05-14 proposal](../audits/preparation/2026-05-14-atlas-comprehensive-fix-and-governance-proposal.md) |
+| 2026-05-17 | Full | Model Selection v1: Opus-default control plane, Sonnet-delegated execution, no router; reverses SOUL.md §5 Sonnet-only rule (per ADR-006) | Approved | 2026-08-17 | ADR-006 |
 
 ## Revocations and modifications
 

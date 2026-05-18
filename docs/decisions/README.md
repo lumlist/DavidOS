@@ -19,6 +19,7 @@ Copy [`ADR-template.md`](./ADR-template.md) to `ADR-NNN-short-title.md`, fill it
 - [ADR-003](./ADR-003-paperclip-frozen-atlas-memo-library.md) — Paperclip frozen; Atlas as memo library (2026-05-11)
 - [ADR-004](./ADR-004-workspace-native-approval-mechanism.md) — Workspace-native approval mechanism (2026-05-11)
 - [ADR-005](./ADR-005-governed-intent-protocol.md) — Governed Intent Protocol; supersedes 2026-05-14 Fix 13 framing (2026-05-17)
+- [ADR-006](./ADR-006-opus-default-control-plane.md) — Opus-default control plane, Sonnet-delegated execution (2026-05-17)
 
 ## Approvals log
 

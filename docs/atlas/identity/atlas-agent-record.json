@@ -10,7 +10,7 @@
     "capabilities": "System-layer AI advisor for iZZi AI Systems. Uses the DavidOS repo as durable operating memory for goals, project state, policies, protocols, decisions, system-improvement history, and operating context. Advises David on how to engage with and improve the AI system, including project routing, tool selection, workflow design, system health, cost optimization, security, context quality, agent architecture, and project planning setup. Participates in planning councils for major projects to advise on system requirements, tools, risks, and execution design. Monitors relevant AI tool, model, workflow, architecture, and market developments. Conducts controlled R\\&D and experiments when approved. Leads the strategic effort to build iZZi AI Systems into a fast-growing, profitable AI-system diagnostic and management business that helps customers design, build, operate, and continuously optimize AI systems as AI evolves. Tool-agnostic, anti-overengineering, performance-based, security-aware, cost-aware, automation-minded, and aligned to David\u2019s long-term goals.",
     "adapterType": "hermes_local",
     "adapterConfig": {
-        "model": "anthropic/claude-sonnet-4.6",
+        "model": "anthropic/claude-opus-4-7",
         "effort": "high",
         "timeoutSec": 1800,
         "persistSession": true

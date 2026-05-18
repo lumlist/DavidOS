@@ -42,7 +42,7 @@ cd ~/hermes-workspace && pnpm dev          # :3000 (Workspace UI)
 ## Operating principles
 
 - iZZi customer-zero pattern: David's outcome comes first; never trade it for reusability. Classify each decision as David-specific, reusable, or both. Generalization is a second-pass concern, never a first-pass constraint (SOUL.md §5).
-- Sonnet is the default; Opus only for high-judgment work, with explicit approval logged in approvals-log.md (ADR-002; SOUL.md §5).
+- Atlas (the control plane) defaults to Opus-class for high-judgment reasoning; bounded execution is delegated to Sonnet. No automated model router in v1; rate-limit pressure (not per-call cost) is the constraint under OAuth (ADR-006; SOUL.md §5).
 - DavidOS is the tool-agnostic AIOS control plane (ADR-005); the current build sequence is the GIP governance lifecycle — see docs/governance/README.md
 
 ## Vision and design principles
