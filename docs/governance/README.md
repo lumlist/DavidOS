@@ -6,12 +6,12 @@
 > Intent Protocol *direction* is ratified by
 > [ADR-005](../decisions/ADR-005-governed-intent-protocol.md) (2026-05-17,
 > L1 Full per [ADR-004](../decisions/ADR-004-workspace-native-approval-mechanism.md);
-> indexed in `docs/decisions/approvals-log.md` entries R1-R6). The GIP spec (`gip-spec.md`) is built and committed;
-> the registries, manifests, and Decision Protocol skill remain **later
-> lifecycle stages,
-> not yet built and each separately gated**. Do not
-> treat the absence of those artifacts as approval to implement them
-> ad hoc — follow the lifecycle below.
+> indexed in `docs/decisions/approvals-log.md` entries R1-R6). The GIP spec
+> (`gip-spec.md`) and the agent/substrate registries are built, committed,
+> and pushed; manifests and the Decision Protocol skill remain **later
+> lifecycle stages, not yet built and each separately gated**. Do not
+> treat the absence of those remaining artifacts as approval to implement
+> them ad hoc — follow the lifecycle below.
 
 ---
 
@@ -62,12 +62,20 @@ act as a decision-maker.
   ADR-005 (2026-05-17); implementation stages still separately gated.**
 - `gip-spec.md` — the operator-usable GIP implementation reference.
   Consolidates the ADR-005-ratified direction by pointer; introduces no
-  design changes. **Lifecycle position: proposal → ADR → spec ✓;
-  registries next.**
+  design changes. **Lifecycle position: proposal → ADR → spec ✓ →
+  registries ✓; manifests next.**
+- `registries/agent-registry.md`, `registries/substrate-registry.md` — the
+  GIP agent and substrate registries. Inventory only — no grants,
+  manifests, activation, or authority. Created/committed/pushed 2026-05-18
+  (commit `2d913ea`; approvals-log 2026-05-18, L1 Light under ADR-005).
+  **Lifecycle position: registries ✓; manifests next.**
 
 ## What is intentionally NOT here yet
 
-ADR-005, registries (agent / substrate), manifests, the Decision Protocol
-skill, validators, action-map / modifier fixes, and any tool integration.
-These are later lifecycle stages, gated on approvals that have not been
-given. Their absence is deliberate, not an omission.
+Manifests (the permission layer; v1 = one project manifest), the Decision
+Protocol skill (authored in the Hermes profile, after the spec),
+validators, action-map / modifier fixes, and any tool integration. These
+are later lifecycle stages, gated on approvals that have not been given.
+ADR-005 (Accepted 2026-05-17, in `docs/decisions/`) and the agent/substrate
+registries are no longer pending — they are built; their prior listing
+here is removed. The remaining absences are deliberate, not an omission.
