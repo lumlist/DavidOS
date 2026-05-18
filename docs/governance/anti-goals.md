@@ -33,7 +33,7 @@ reusable template. The *specific entries* are partly DavidOS-specific.
 
 ## Anti-goals (what DavidOS will NOT build now)
 
-1. **No custom UI / operator command center.** The future UI (Jobs's
+1. **No custom UI / operator command center.** The future UI (Steve's
    domain) is deferred. Only the structured data objects it will one day
    read are preserved. No inbox, queue, dashboard, or view is built now.
 
@@ -69,7 +69,7 @@ reusable template. The *specific entries* are partly DavidOS-specific.
    fields with safe defaults. Field additions require explicit
    justification against an observed gap, not a hypothetical one.
 
-9. **No premature per-agent build.** Karrigan, Hustler, Jeff, Jobs exist
+9. **No premature per-agent build.** Karrigan, Hustler, Jeff, Steve exist
    only as named-future registry stubs. Their coaching / revenue / BD /
    UI logic is not designed or built in governance v1.
 

@@ -25,7 +25,7 @@ existing v0.1 policy kernel (`docs/autonomy/action-map.md`,
 add a context layer, manifests with ceilings, a decision protocol, and a
 tier-aware substrate adapter seam with Hermes as the only real v1 adapter.
 Validate through one loop: building an AI project/business. Build nothing
-speculative. Agents (Karrigan/Hustler/Jeff/Jobs) and tools (Claude
+speculative. Agents (Karrigan/Hustler/Jeff/Steve) and tools (Claude
 Code/Codex/Ruflo/NotebookLM/Obsidian) are registry entries and invariants
 only — zero implementation.
 
@@ -88,7 +88,7 @@ just in aspiration. [reusable]
 ## 4. Minimal Governed Intent Envelope (11 fields)
 
 1. `intent` — free text: what is wanted
-2. `principal` — Atlas|David|Karrigan|Hustler|Jeff|Jobs|subagent:<id>|cron:<id> (default Atlas)
+2. `principal` — Atlas|David|Karrigan|Hustler|Jeff|Steve|subagent:<id>|cron:<id> (default Atlas)
 3. `action_category` — matched action-map category or "uncategorized"
 4. `context_ref` — manifest id(s) or "ad-hoc"
 5. `substrate` — hermes (default) | claude-code | codex | ruflo
@@ -225,7 +225,7 @@ cost/model posture, authority boundaries):
   (karrigan-intent-capture.md lines 13,36), others Sonnet per SOUL.md §5
 - `execution_authority` — authority-boundary primitive; Karrigan=none initially
 - `allowed_tools_or_substrates` — routing + containment
-- `status` — only Atlas=active; Karrigan/Hustler/Jeff/Jobs=named-future
+- `status` — only Atlas=active; Karrigan/Hustler/Jeff/Steve=named-future
 
 Explicitly excluded: identity/SOUL layer, memory, credentials,
 relationships, schedules. Governance/routing registry, not a profile
@@ -255,7 +255,7 @@ adapter seam. Shrinks v1 scope. [reusable] tier model.
 ## 12. UI-facing structured objects to preserve now (observability spine, C3)
 
 Do not design the UI. Single rule: **no governance object is prose-only.**
-Keep structured from day one so Jobs later designs against a stable
+Keep structured from day one so Steve later designs against a stable
 schema:
 - (a) decision record (envelope + decision + structured citation)
 - (b) approval-queue item (ADR-004 Light/Full request AS an object)
@@ -350,7 +350,7 @@ Until this lands the repo is not source-of-truth. High-leverage.
 
 ## 19. Explicitly deferred
 
-Hustler revenue/offer logic; Jeff CRM/pipeline/proposal machinery; Jobs
+Hustler revenue/offer logic; Jeff CRM/pipeline/proposal machinery; Steve
 UI build; Karrigan coaching/reactive/scheduled skills; per-agent SOUL
 layers; customer-facing legal/compliance workflow; Ruflo/Claude
 Code/Codex adapter implementations; NotebookLM/Obsidian integrations;

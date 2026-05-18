@@ -64,7 +64,7 @@ Hard cap: 11 fields, safe defaults — a routine action emits a near-empty
 envelope. Field-sprawl is the documented failure mode; the cap is the design.
 
 1. `intent` — free text: what is wanted.
-2. `principal` — Atlas|David|Karrigan|Hustler|Jeff|Jobs|subagent:<id>|cron:<id> (default Atlas).
+2. `principal` — Atlas|David|Karrigan|Hustler|Jeff|Steve|subagent:<id>|cron:<id> (default Atlas).
 3. `action_category` — matched action-map category or "uncategorized".
 4. `context_ref` — manifest id(s) or "ad-hoc".
 5. `substrate` — hermes (default) | claude-code | codex | ruflo.
@@ -188,7 +188,7 @@ neither an identity/credential/CRM layer (#7); the observability spine is a
 **schema only** — no consumers, dashboards, or analytics (#4); no
 UI/command center (#1); no standing council process (#2); no eval harness
 (#3); exactly one real adapter, Hermes — no Claude Code/Codex/Ruflo adapter
-build (#6); no per-agent build for Karrigan/Hustler/Jeff/Jobs (#9); no
+build (#6); no per-agent build for Karrigan/Hustler/Jeff/Steve (#9); no
 speculative ADR proliferation (#10). Lifting any constraint is a separate
 logged ADR-004 decision (anti-goals.md §"How an anti-goal is lifted").
 

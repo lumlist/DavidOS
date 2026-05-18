@@ -33,7 +33,7 @@ execution/orchestration substrate; Claude Code/Codex are preferred
 build/dev tools; Ruflo is a future bounded multi-agent build-execution
 layer (not a governance brain); NotebookLM/Obsidian are
 knowledge/research resources; a future UI is the operator command center.
-Future agents (Karrigan/Hustler/Jeff/Jobs) are represented as registry
+Future agents (Karrigan/Hustler/Jeff/Steve) are represented as registry
 stubs and invariants only. The AI project/business build loop is the sole
 v1 acceptance test.
 
@@ -131,3 +131,4 @@ first.
 - `docs/audits/preparation/2026-05-14-atlas-comprehensive-fix-and-governance-proposal.md`
   — superseded in governance scope (Fix 13 framing)
 - `docs/decisions/approvals-log.md` — entries R1-R6 indexing this decision
+- Amendment 2026-05-18 (L1 Light, approvals-log): future UI-agent label reconciled Jobs→Steve. Naming only; no decision, architecture, or scope change.
