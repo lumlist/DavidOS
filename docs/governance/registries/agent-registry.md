@@ -51,7 +51,7 @@ per-agent build).
 | id | role | primary_function | posture | default_model_tier | execution_authority | allowed_tools_or_substrates | status |
 |---|---|---|---|---|---|---|---|
 | Atlas | Chief Systems Advisor | DavidOS control-plane reasoning & advisory | approval-disciplined | opus-default (ADR-006) | standard | hermes | active |
-| Karrigan | input coach | [captured-intent] prompt / focus / UX coaching — see `docs/roadmap/2026-05-14-karrigan-intent-capture.md` (primary source; intent only, not authority) | (unset) | (unset) | none | none | named-future |
+| Karrigan | input coach | [captured-intent] prompt / focus / UX coaching — canonical intent-and-operating-model at `docs/agents/karrigan/intent-and-operating-model.md` (consolidates the 2026-05-19 roadmap, 2026-05-19 raw source, and 2026-05-14 capture; intent only, not authority) | (unset) | (unset) | none | none | named-future |
 | Hustler | [unknown role] | intent not yet captured | (unset) | (unset) | none | none | named-future |
 | Jeff | [unknown role] | intent not yet captured | (unset) | (unset) | none | none | named-future |
 | Steve | future UI-agent (label reconciled from "Jobs" — commit 9cac8e3, approvals-log 2026-05-18) | intent not yet captured; deferred UI/operator-command-center domain per anti-goals.md #1 (do not design) | (unset) | (unset) | none | none | named-future |
@@ -83,4 +83,4 @@ or authority is invented for Hustler, Jeff, or Steve.
 - [gip-spec.md](../gip-spec.md) — §4 envelope, §6 decision contract, §7 manifest model, §8 invariants
 - [anti-goals.md](../anti-goals.md) — #7 registry cap, #9 no per-agent build
 - [governance/README.md](../README.md) — lifecycle
-- [Karrigan intent capture](../../roadmap/2026-05-14-karrigan-intent-capture.md) — Karrigan primary-source intent (not authority)
+- [Karrigan intent and operating model](../../agents/karrigan/intent-and-operating-model.md) — canonical Karrigan intent-and-operating-model artifact (intent only, not authority); supersedes the 2026-05-14 capture, 2026-05-19 raw source, and 2026-05-19 roadmap as the citation target while those sources remain on disk
