@@ -6,15 +6,15 @@ updated_at: 2026-05-28
 author: atlas
 status: updated
 schema_version: 0.1
-version: 0.2
-supersedes: v0.1 (committed at f898203)
+version: 0.3
+supersedes: v0.2 (file artifact committed at 2407669; approval logged at c51062a)
 plan_version: 0.2
 plan_commit: 105ce1b
 ---
 
-# FastDraft #2 Operator Context Pack v0.2
+# FastDraft #2 Operator Context Pack v0.3
 
-Status: updated post-G3.0 — reflects G3.0-approved Repo Layout values and adds the Relationship-Disclosed Boundaries section.
+Status: updated post-provider-routing remediation — records ADR-007 + Provider Routing Register at commit `51bb070`, preserves G0.1-v0.2 and G3.0 state, and keeps retrieval paused until G1.0 is durably logged.
 Plan reference: `docs/plans/tool-access-workstream-scaling-plan-v0.2.md`
 Plan commit: `105ce1b`
 Lineage: fd-002 is the first DavidOS-governed FastDraft; v8.2 / Custom Scapes = pre-governed FastDraft #1 reference lineage.
@@ -28,18 +28,44 @@ This packet is the shared run context for FastDraft #2. It exists to reduce frag
 
 It is a document, not a service. No automated shared-state integration is assumed in v1.
 
+## Provider Routing + Cost Boundary
+
+Provider-routing policy is now canonical and durable:
+
+- **ADR-007:** `docs/decisions/ADR-007-provider-routing-and-cost-boundaries.md`
+- **Provider Routing Register:** `docs/operations/provider-routing-register.md`
+- **Durable commit:** `51bb070`
+
+ADR-007 establishes capability-maximizing, subscription-first routing. OpenAI/Codex is described as the **intended subscription-covered OpenAI/Codex route** unless and until billing-surface evidence proves the exact subscription treatment. If evidence contradicts intended subscription coverage, Hermes/Atlas pauses high-token work and provider routing is remediated before more high-token work.
+
+Verified Atlas provider-routing state as of 2026-05-28:
+
+- Main Hermes/Atlas route: `openai-codex` / `gpt-5.5` / `https://chatgpt.com/backend-api/codex`
+- `auxiliary.web_extract`: `openai-codex` / `gpt-5.5` / `https://chatgpt.com/backend-api/codex`
+- `auxiliary.compression`: `openai-codex` / `gpt-5.5` / `https://chatgpt.com/backend-api/codex`
+- `delegation`: `openai-codex` / `gpt-5.5` / `https://chatgpt.com/backend-api/codex`
+- `fallback_providers`: `[]`
+- Atlas auth provider keys: `openai-codex` only
+- Atlas credential pool keys: `openai-codex` only
+- Atlas profile `.env`: absent
+- Current process environment: no `ANTHROPIC*` / `CLAUDE*` variable names
+- No active Atlas runtime/auth route points to Anthropic, Claude, or `https://api.anthropic.com`
+
+FastDraft retrieval must stay inside ADR-007/provider-register constraints. No provider smoke test, paid API route, or extra-usage route is authorized by this Pack.
+
 ## Version + Supersession
 
-- This is v0.2, status `updated`, pending fresh G0.1 Light reaffirmation (the relationship boundary is substantive new operating context, not just G3.0 value-fill).
+- This is v0.3, status `updated`.
 - v0.1 was approved at G0.1 Light on 2026-05-28 (approvals-log row in commit `d60d462`); v0.1 file artifact lives at commit `f898203`.
-- v0.2 changes vs v0.1:
-  - Frontmatter: `version: 0.2`, `status: updated`, `supersedes: v0.1 (committed at f898203)`.
-  - Header: lineage line added (fd-002 first governed; v8.2 = pre-governed FD#1).
-  - Scope: target named as M Vince Nail Spa, category beauty/nail salon (was "med spa prototype").
-  - "Pending G3.0 Repo Layout Fields" section replaced by "Repo Layout (approved at G3.0)" with concrete values.
-  - New top-level section: "Relationship-Disclosed Boundaries" (between Data Scope and Source Rules).
-  - Open Decisions updated: items resolved at G3.0 moved out; screenshot proof helper added as Before-#2 item.
-- Subsequent Run-level reissues bump minor version (v0.3, ...) and record what changed in this block.
+- v0.2 file artifact was committed at `2407669`; G0.1-v0.2 approval/log row was committed at `c51062a`. v0.2 remains the operative Pack baseline for target, repo layout, relationship boundary, and F4 fact-tracing discipline until v0.3 is approved and written.
+- G3.0 approval/log row was committed at `3ef9206`.
+- v0.3 changes vs v0.2:
+  - Frontmatter: `version: 0.3`, `status: updated`, `supersedes: v0.2 (file artifact committed at 2407669; approval logged at c51062a)`.
+  - Header: provider-routing remediation status added.
+  - New top-level section: "Provider Routing + Cost Boundary" records ADR-007 and the Provider Routing Register at commit `51bb070`.
+  - New top-level section: "Research Brief + Retrieval State" records the verified Ari/Codex Research Brief and explicitly keeps retrieval paused until G1.0 is durably logged.
+  - Gates and Approval sections updated to reflect G0.1 v0.1 approved/logged at `d60d462`, G0.1-v0.2 file at `2407669`, G0.1-v0.2 approval/log row at `c51062a`, G3.0 approval/log row at `3ef9206`, provider-routing docs durable at `51bb070`, and G1.0 pending.
+- Subsequent Run-level reissues bump minor version (v0.4, ...) and record what changed in this block.
 - Superseded versions remain as in-repo history under the file's git log.
 
 ## Run Roles
@@ -110,6 +136,28 @@ Approved at G3.0 Light on 2026-05-28 (approvals-log row in commit `3ef9206`). Ar
 
 G3.0 does NOT authorize build, retrieval, package changes, deployment, or customer-facing action.
 
+## Research Brief + Retrieval State
+
+FastDraft #2 Research Brief state:
+
+- Research Brief exists at `<izzi-revenue-dashboard>/fastdraft/fd-002-mvince-nail-spa/brief/brief.md`.
+- Verified size: 20,542 bytes.
+- Verified line count: 268 lines.
+- Verified SHA-256: `FD52608E733C7C7C37FAE16280D7E1DF3C191A146590A5CD9D11DB7A2BF537FF`.
+- Research Brief was written locally by Ari/Codex before provider-routing work paused retrieval.
+
+Current FastDraft gate state:
+
+- G0.1-v0.2 approved: Operator Context Pack v0.2 is the operative Pack baseline until v0.3 is approved and written.
+- G3.0 approved: Repo Layout Note / target / workspace / relationship-data boundary are approved.
+- Target: M Vince Nail Spa (`mvincenailspa.com`).
+- Category: beauty/nail salon, not med spa.
+- Data boundary: public-source/public-web only.
+- Relationship channel: inert for facts and research direction. No girlfriend-channel / relationship-channel tips or facts may shape retrieval.
+- Every load-bearing fact must trace to a public source in the Source Log.
+- G1.0 approvals-log row is not yet written.
+- Retrieval remains paused until G1.0 is durably logged.
+
 ## Data Scope
 
 FastDraft #2 uses public-source/public-web facts only.
@@ -139,9 +187,9 @@ David has a personal connection to M Vince Nail Spa through his girlfriend. This
 - anything observed in person by David or his girlfriend that is not also independently published on a public source
 
 **F4 fact-tracing discipline:**
-- Relationship-channel tips MAY guide research direction (e.g., "look at how they describe their gel manicure service" is a fine prompt for what to research).
+- Relationship-channel tips or facts MUST NOT shape retrieval, research direction, source selection, or load-bearing claims for fd-002.
 - Every load-bearing fact in the Fact Pack MUST trace to a public source recorded in the Source Log with a proper completeness label.
-- A tip that surfaces a topic does NOT count as the source for that topic — independent public-source verification is still required.
+- A relationship-channel tip does NOT count as a source and must not be used as a research-direction input for fd-002.
 - If a fact only exists via the relationship channel and not on any public source, it is `[unverifiable]` and refused for load-bearing use.
 
 **Pipeline 5 implication (deferred):** If at Step 13 David decides to show FastDraft #2 externally to M Vince Nail Spa as a real proposal, the relationship connection becomes a Pipeline 5 disclosure question (how/when to disclose, by whom). That decision is deferred to Step 13 and outside the scope of this Pack.
@@ -200,8 +248,10 @@ Note: the screenshot proof helper that writes to this layout still needs impleme
 ## Gates For This Run
 
 **Pre-run:**
-- G0.1 Light — Operator Context Pack approval (v0.1 approved at commit `d60d462`; v0.2 pending reaffirmation)
-- G3.0 Light — Ari Repo Layout Note approval (approved at commit `3ef9206`)
+- G0.1 Light — Operator Context Pack v0.1 approval (approval/log row committed at `d60d462`; v0.1 file artifact committed at `f898203`)
+- G0.1-v0.2 Light — Operator Context Pack v0.2 reaffirmation (v0.2 file artifact committed at `2407669`; approval/log row committed at `c51062a`)
+- Provider-routing policy/docs — ADR-007 + Provider Routing Register durable at commit `51bb070`
+- G3.0 Light — Ari Repo Layout Note approval (approval/log row committed at `3ef9206`)
 
 **Research:**
 - G1.0 Light — Research Brief
@@ -303,12 +353,14 @@ Outputs fold into Research Brief / Source Log, not into this packet directly.
 
 ## Approval
 
-G0.1 Light reaffirmation for v0.2 means:
+G0.1-v0.2 Light approval means:
 - v0.2 reflects G3.0-approved values correctly
-- the new Relationship-Disclosed Boundaries section is approved as binding operating context
+- the Relationship-Disclosed Boundaries section is approved as binding operating context
 - F4 fact-tracing discipline is approved as binding
-- the v0.1 G0.1 approval (commit `d60d462`) carries forward in spirit; v0.2 supersedes v0.1 as the operative Pack
+- the v0.1 G0.1 approval (commit `d60d462`) carries forward in spirit; v0.2 supersedes v0.1 as the operative Pack baseline
 
-G0.1-v0.2 does NOT authorize Step 3 retrieval. G1.0 (Research Brief approval) must still pass before Step 3.
+v0.3 records provider-routing state and verified Research Brief / retrieval-pause state. It does NOT authorize Step 3 retrieval.
+
+G1.0 approvals-log row is not yet written. Retrieval remains paused until G1.0 is durably logged.
 
 — end of operator-context-pack.md —
